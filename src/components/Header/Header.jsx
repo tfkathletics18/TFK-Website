@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import NavBar from "../NavBar/NavBar";
 import Logo from "../../assets/images/logo.png";
 import "./Header.scss";
 
@@ -14,6 +15,7 @@ function Header() {
     <header className="header">
       <img className="header__logo" src={Logo} alt="TFK Athletics Performance logo" onClick={returnHome}/>
       <HamburgerMenu />
+      <NavBar />
     </header>
   );
 }
