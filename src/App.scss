@@ -1,1 +1,7 @@
 @use "./styles/partials/global" as *;
+
+.app {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
