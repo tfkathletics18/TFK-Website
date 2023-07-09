@@ -76,5 +76,9 @@
 
     &__text {
         @include textStyle($plain-white, 1rem, 1.375rem, 600);
+
+        &--current {
+            color: $primary-red;
+        }
     }
 }
