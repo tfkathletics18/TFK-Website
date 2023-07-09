@@ -1,0 +1,19 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: $secondary-black;
+
+    &__logo {
+        width: 25%;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
