@@ -1,8 +1,12 @@
-import React from 'react'
+import Hero from '../../components/Hero/Hero';
+import "./Home.scss";
 
 function Home() {
   return (
-    <div>Home</div>
+    <main className="home">
+      <Hero />
+    </main>
+
   )
 }
 
