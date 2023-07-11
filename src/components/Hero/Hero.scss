@@ -22,6 +22,14 @@
     &__intro-block {
         background-color: $primary-black;
         padding: 1.5rem 1rem;
+
+        @include tablet {
+            padding: 1.5rem 2rem;
+        }
+
+        @include desktop {
+            padding: 1.5rem 5rem;
+        }
     }
 
     &__title {
@@ -60,6 +68,11 @@
 
         @include tablet {
             width: 100%;
+            padding: 1.5rem 2rem;
+        }
+
+        @include desktop {
+            padding: 1.5rem 5rem;
         }
     }
 
@@ -71,6 +84,11 @@
         @include tablet {
             height: 100%;
             align-items: center;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-around;
         }
     }
 }
