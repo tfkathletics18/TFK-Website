@@ -38,4 +38,9 @@
         background-color: $primary-black;
         padding: 1.5rem 1rem;
     }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+    }
 }
