@@ -23,8 +23,16 @@
         }
     }
 
-    &__player {
+    &__players {
         width: 100%;
+        text-align: center;
+    }
+
+    &__player-list {
+        display: inline-block;
+    }
+
+    &__player {
         color: $plain-white;
         display: flex;
         align-items: center;

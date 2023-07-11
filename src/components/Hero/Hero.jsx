@@ -17,14 +17,16 @@ function Hero() {
         <img src={heroImage1} className="hero__image" alt="view from the sidelines"/>
         <div className="hero__intro-block">
             <h1 className="hero__title head-text">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
-            <ul className="hero__players">
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
-            </ul>
+            <div className="hero__players">
+              <ul className="hero__player-list">
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
+                  <li className="hero__player"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+              </ul>
+            </div>
         </div>
         <img src={heroImage2} className="hero__image" alt="player standing on ball"/>
         <div className="hero__cta-block">
