@@ -29,4 +29,12 @@
     &__title {
         margin: 3rem 0 1rem 0;
     }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+    }
 }
