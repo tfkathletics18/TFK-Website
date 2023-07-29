@@ -17,7 +17,10 @@
         4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
     @include textStyle($plain-white, 1rem, 20px, 600);
-    max-width: 25rem;
+  
+    @include tablet {
+        max-width: 25rem;
+    }
 
     @include desktop {
         width: 40%;
