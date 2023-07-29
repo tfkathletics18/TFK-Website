@@ -37,21 +37,21 @@ function Hero() {
       <section className="hero">
           <img src={heroImage1} className="hero__image" alt="view from the sidelines"/>
           <div className="hero__intro-block">
-              <h1 className="hero__title head-text">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
+              <h1 className="hero__title head-text head-text--white">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
               <div className="hero__players">
                 <ul className="hero__player-list">
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                    <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
+                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
                 </ul>
               </div>
           </div>
           <img src={heroImage2} className="hero__image" alt="player standing on ball"/>
           <div className="hero__cta-block">
-              <h2 className="hero__title hero__title--second head-text">EXPERIENCE THE BENEFITS</h2>
+              <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
               <div className="hero__buttons">
                 <Button label="Meet The Coach" onClickFunction={handleClick}/>
                 <a href="#contact"><Button label="Get Started" /></a>
@@ -66,18 +66,18 @@ function Hero() {
       <section className="hero">
           <div className="hero__container">
             <div className="hero__intro-block">
-                <h1 className="hero__title head-text">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
+                <h1 className="hero__title head-text head-text--white">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
                 <div className="hero__players">
                   <ul className="hero__player-list">
                     <div className="hero__player-list--left">
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
                     </div>
                     <div className="hero__player-list--right">
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
                     </div>
                   </ul>
                 </div>
@@ -87,7 +87,7 @@ function Hero() {
           <div className="hero__container">
             <img src={heroImage2} className="hero__image" alt="player standing on ball"/>
             <div className="hero__cta-block">
-                <h2 className="hero__title hero__title--second head-text">EXPERIENCE THE BENEFITS</h2>
+                <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
                 <div className="hero__buttons">
                   <Button label="Meet The Coach" onClickFunction={handleClick}/>
                   <Button label="Get Started" />
@@ -103,24 +103,24 @@ function Hero() {
         <div className="hero__container">
           <div className="hero__left-container">
             <div className="hero__intro-block">
-                <h1 className="hero__title head-text">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
+                <h1 className="hero__title head-text head-text--white">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
                 <div className="hero__players">
                   <ul className="hero__player-list">
                     <div className="hero__player-list--left">
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
                     </div>
                     <div className="hero__player-list--right">
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                      <li className="hero__player p-text"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
+                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
                     </div>
                   </ul>
                 </div>
             </div>
             <div className="hero__cta-block">
-                <h2 className="hero__title hero__title--second head-text">EXPERIENCE THE BENEFITS</h2>
+                <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
                 <div className="hero__buttons">
                   <Button label="Meet The Coach" onClickFunction={handleClick}/>
                   <Button label="Get Started" />
