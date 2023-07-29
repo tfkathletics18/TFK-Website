@@ -9,17 +9,25 @@
 }
 
 .head-text {
-    @include textStyle($plain-white, 1.5rem, 2rem, 700);
+    @include textStyle($plain-black, 1.5rem, 2rem, 700);
 
     @include tablet {
-        @include textStyle($plain-white, 2rem, 3.75rem, 700);
+        @include textStyle($plain-black, 2rem, 3.75rem, 700);
+    }
+
+    &--white {
+        color: $plain-white;
     }
 }
 
 .p-text {
-    @include textStyle($plain-white, 0.875rem, 1.125rem, 400);
+    @include textStyle($plain-black, 0.875rem, 1.125rem, 400);
 
     @include tablet {
-        @include textStyle($plain-white, 1rem, 1.375rem, 400);
+        @include textStyle($plain-black, 1rem, 1.375rem, 400);
+    }
+
+    &--white {
+        color: $plain-white;
     }
 }
