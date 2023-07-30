@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { heroPlayers } from '../../constants';
 import heroImage1 from "../../assets/images/tfk-2nd-slide.png";
 import heroImage2 from "../../assets/images/tfk-3rd-slide.png";
 import Button from "../Button/Button";
@@ -40,12 +41,7 @@ function Hero() {
               <h1 className="hero__title head-text head-text--white">SOME OF THE BEST PLAYERS WORK WITH A 1-ON-1 COACH</h1>
               <div className="hero__players">
                 <ul className="hero__player-list">
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                    <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                  {heroPlayers.map((player, index) => <li key={index} className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>)}
                 </ul>
               </div>
           </div>
@@ -70,14 +66,22 @@ function Hero() {
                 <div className="hero__players">
                   <ul className="hero__player-list">
                     <div className="hero__player-list--left">
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                      {heroPlayers.map((player, index) => {
+                        while (index < 3) {
+                          return (
+                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                          )
+                        }
+                      })}
                     </div>
                     <div className="hero__player-list--right">
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                      {heroPlayers.map((player, index) => {
+                        while (index >= 3 && index < 6) {
+                          return (
+                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                          )
+                        }
+                      })}
                     </div>
                   </ul>
                 </div>
@@ -107,14 +111,22 @@ function Hero() {
                 <div className="hero__players">
                   <ul className="hero__player-list">
                     <div className="hero__player-list--left">
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> Cristiano Ronaldo, Al-Nassr FC</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Erling Haaland, Manchester City</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Phil Foden, Manchester United</li>
+                      {heroPlayers.map((player, index) => {
+                        while (index < 3) {
+                          return (
+                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                          )
+                        }
+                      })}
                     </div>
                     <div className="hero__player-list--right">
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Jadon Sancho, Manchester United</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Christian Pulisic, Chelsea</li>
-                      <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/>Alex Morgan, USWNT</li>
+                      {heroPlayers.map((player, index) => {
+                        while (index >= 3 && index < 6) {
+                          return (
+                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                          )
+                        }
+                      })}
                     </div>
                   </ul>
                 </div>
