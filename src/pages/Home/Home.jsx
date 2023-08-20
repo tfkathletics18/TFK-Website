@@ -1,3 +1,5 @@
+import { trainingRequirements, services, servicesIcons } from '../../constants';
+import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import Hero from '../../components/Hero/Hero';
 import "./Home.scss";
 
@@ -17,13 +19,12 @@ function Home() {
         <div className="home-intro__container">
           <h2 className="home-intro__title head-text">WHAT WE OFFER</h2>
           <ul className="home-intro__list">
-            <li className="home-intro__list-item p-text">Age Groups: Under 8 - 17</li>
-            <li className="home-intro__list-item p-text">Maximum Number of Players Per Session: 10</li>
-            <li className="home-intro__list-item p-text">Minimum Number of Players for Small Group Training: 3</li>
-            <li className="home-intro__list-item p-text">Targeted Areas: Agility, Technique, Power, Strength</li>
-            <li className="home-intro__list-item p-text">Location: Wismer Park (Spring/Summer/Fall), Various GTA Indoor Gyms (Winter)</li>
+            {trainingRequirements.map((item, index) => <li key={index} className="home-intro__list-item p-text">{item}</li>)}
           </ul>
         </div>
+      </section>
+      <section className="home-services">
+        {services.map((service, index) => <ServiceCard key={index} Icon={servicesIcons[index]} service={service}/>)}
       </section>
     </main>
 

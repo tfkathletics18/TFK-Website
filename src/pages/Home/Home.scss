@@ -32,9 +32,23 @@
 
     &__list {
         list-style-type: none;
+        margin-bottom: 1.5rem;
     }
 
     &__list-item {
         margin-bottom: 0.5rem;
+    }
+}
+
+.home-services {
+    padding: 0 1rem;
+    text-align: center;
+
+    @include tablet {
+        padding: 0 2rem;
+    }
+
+    @include desktop {
+        padding: 0 5rem;
     }
 }
