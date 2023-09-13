@@ -27,27 +27,27 @@ export const services = [
         title: "1 ON 1 TRAINING",
         bulletPoints: 
             [
-            "Player gets the specific attention needed.",
-            "Coach is a mentor & easily spot areas to improve.",
-            "Individualized training program so players learn skills & technique faster.",
+            "Player gets the specific attention needed",
+            "Coach is a mentor & easily spot areas to improve",
+            "Individualized training program so players learn skills & technique faster",
             ],
     },
     {
         title: "SMALL GROUP TRAINING",
         bulletPoints: 
         [
-        "For players who work best in small groups.",
-        "Friendly competition to increase player enjoyment & motivation.",
-        "Individual attention by ensuring a 3:1, 4:1, or 5:1 ratio of players to coaches."
+        "For players who work best in small groups",
+        "Friendly competition to increase player enjoyment & motivation",
+        "Individual attention by ensuring a 3:1, 4:1, or 5:1 ratio of players to coaches"
         ],
     },
     {
         title: "TEAM TRAINING",
         bulletPoints: 
         [
-        "For teams struggling to complete full training drills during practice.",
-        "Perfect for strength training, conditioning, and fitness goals during the preseason.",
-        "Teams train with coaches for extra reps.",
+        "For teams struggling to complete full training drills during practice",
+        "Perfect for strength training, conditioning, and fitness goals during the preseason",
+        "Teams train with coaches for extra reps",
         ],
     },
     {
@@ -55,15 +55,15 @@ export const services = [
         bulletPoints: 
         [
         "Identifies muscle weakness & imbalances",
-        "Assessing level of player strength, on/off the field.",
-        "Focus on flexibility & mobility throughout the hips, knees and shoulders to help minimize the chances of an injury occurring.",
+        "Assessing level of player strength, on/off the field",
+        "Focus on flexibility & mobility throughout the hips, knees and shoulders to help minimize the chances of an injury occurring",
         ],
     },
     {
         title: "POSITION SPECIFIC TRAINING",
         bulletPoints: 
         [
-        "Improve understanding of their position, passing, spatial awareness and shooting.",
+        "Improve understanding of their position, passing, spatial awareness and shooting",
         "Works on how to position themselves on the field, effective turning, excellent receiving,and ensures proper body positioning",
         ],
     },
@@ -73,7 +73,7 @@ export const services = [
         [
         "Overcomes issue of frequently tripping over the ball or own feet",
         "Improves jumping, landing, ladder drills, and other soccer specific movements",
-        "Emphasis on footwork.",
+        "Emphasis on footwork",
         ],
     },
     {
@@ -81,7 +81,7 @@ export const services = [
         bulletPoints:
         [
         "Teaches dietary recommendations to help players receive the best nutrition for their sport",
-        "Specialized training offering individualized training for individuals from sports other than soccer on occasion.",
+        "Specialized training offering individualized training for individuals from sports other than soccer on occasion",
         ],
     },
     {
