@@ -6,11 +6,11 @@ function ServiceCard({Icon, service}) {
     <div className="card">
         <div className="card__content">
             <Icon className="card__icon"/>
-            <h1 className="card__title">{service.title}</h1>
+            <h1 className="card__title title-text">{service.title}</h1>
             <ul className="card__list">
-                {service.bulletPoints.map((point, index) => <li key={index} className="card__list-item"><span className="card__list-item-bar">{point}</span></li>)}
+                {service.bulletPoints.map((point, index) => <li key={index} className="card__list-item p-text"><span className="card__list-item-bar">{point}</span></li>)}
             </ul>
-            <button>Watch Trailer</button>
+            <button className="card__button">Watch Trailer</button>
         </div>
     </div>
   )

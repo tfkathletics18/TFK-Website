@@ -33,6 +33,10 @@
     &__list {
         list-style-type: none;
         margin-bottom: 1.5rem;
+
+        @include tablet {
+            margin-bottom: 3rem;
+        }
     }
 
     &__list-item {
@@ -46,6 +50,9 @@
 
     @include tablet {
         padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     @include desktop {
