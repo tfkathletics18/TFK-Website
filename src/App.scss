@@ -20,6 +20,19 @@
     }
 }
 
+.title-text {
+    @include textStyle($plain-black, 1.125rem, 1.5rem, 600);
+
+    @include tablet {
+        @include textStyle($plain-black, 1.375, 2rem, 600);
+    }
+
+    &--white {
+        color: $plain-white;
+    }
+}
+
+
 .p-text {
     @include textStyle($plain-black, 0.875rem, 1.125rem, 400);
 
