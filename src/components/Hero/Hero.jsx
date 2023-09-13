@@ -69,7 +69,7 @@ function Hero() {
                       {heroPlayers.map((player, index) => {
                         while (index < 3) {
                           return (
-                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                            <li key={index} className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
                           )
                         }
                       })}
@@ -78,7 +78,7 @@ function Hero() {
                       {heroPlayers.map((player, index) => {
                         while (index >= 3 && index < 6) {
                           return (
-                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                            <li key={index} className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
                           )
                         }
                       })}
@@ -114,7 +114,7 @@ function Hero() {
                       {heroPlayers.map((player, index) => {
                         while (index < 3) {
                           return (
-                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                            <li key={index} className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
                           )
                         }
                       })}
@@ -123,7 +123,7 @@ function Hero() {
                       {heroPlayers.map((player, index) => {
                         while (index >= 3 && index < 6) {
                           return (
-                            <li className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
+                            <li key={index} className="hero__player p-text p-text--white"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {player}</li>
                           )
                         }
                       })}
