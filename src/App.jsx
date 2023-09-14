@@ -3,6 +3,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Gallery from './pages/Gallery/Gallery'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import './App.scss'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/gallery' element={<Gallery />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   )

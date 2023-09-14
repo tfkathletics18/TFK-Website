@@ -1,0 +1,78 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+    background-color: $plain-black;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        
+    @include tablet {
+        padding: 0 2rem;
+    }
+
+    @include desktop {
+        padding: 0 5rem;
+    }
+
+    &__title {
+        padding-top: 3rem;
+        margin-bottom: 0.5rem;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+        
+        @include tablet {
+            margin-bottom: 3rem;
+        }
+
+        @include desktop {
+            max-width: 72%;
+        }
+    }
+
+    &__location {
+        margin-bottom: 1rem;
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        
+        @include tablet {
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &__icon {
+        height: 1.25rem;
+        width: 3rem;
+        color: $plain-white;
+
+        @include tablet {
+            height: 1.75rem;
+            width: 3.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__socials-container {
+        margin: 3rem 0;
+    }
+}
