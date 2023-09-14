@@ -104,3 +104,16 @@ export const servicesIcons = [
     GiGymBag,
     VscRemoteExplorer, 
 ]
+
+export const footerDetails = {
+    heading: "TFK Athletic Performance",
+    description: "Whether you want to bring your game to the next level or just want to spend some time playing a fun sport, this is the right place for you.  Book a session or get answers to any questions you might have.",
+    location: "Wismer Park (Castlemore Rd Between Mccowan and Markham Rd.)",
+    phone: "+1 (647) 523-3702",
+    email: "totalfitnesskinetics@gmail.com",
+    instagram: "https://www.instagram.com/tfkathleticperformance",
+    facebook: "https://www.facebook.com/tfkathleticperformance",
+    twitter: "https://twitter.com/athletictfk",
+    snapchat: "https://snapchat.com/add/tfkathletics",
+    youtube: "https://www.youtube.com/channel/UCvY1Ibn9RZ4nBdxtgKB2ryg",
+}
