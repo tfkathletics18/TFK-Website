@@ -117,3 +117,90 @@ export const footerDetails = {
     snapchat: "https://snapchat.com/add/tfkathletics",
     youtube: "https://www.youtube.com/channel/UCvY1Ibn9RZ4nBdxtgKB2ryg",
 }
+
+export const aboutTheCoach = {
+    pargraph1: "In 2007 Kusema migrated to Canada from the USA. Between 2008-16, he was a part of 3 different clubs. The first, Toronto Croatia Football Club. He also played with Brampton City United for 2 seasons, where his team became CSL Reserve Champions. There were then four seasons spent with Lakeshore United, which saw them winning the Ukrainian Tournament as well as become Champions of the in-season tournament.",
+    paragraph2: "Since leaving Lakeshore United in 2016, Kusema has dedicated his time to teaching other younger players to go from good to great without losing a love of the sport. This is what led to him establishing Total Fitness Kinetics: Athletic Performance.",
+    paragraph3: "With the goal of offering high-quality training programs for youth soccer players at an affordable price, TFK Athletic Performance is responsible for training dozens of future stars. And behind all of it is Kusema as he strives to teach and inspire players under 8-17.",
+    paragraph4: "Tinashe Kusema, has been involved in the world of soccer for as long as he can remember. Although he is now a certified personal trainer, he has been a player for far longer.",
+    paragraph5: "Starting back at Marietta High School in Marietta, Georgia, USA, he was molded into a star Forward/Midfielder and became the official MVP of a team that went undefeated at home in 5AAAAA Region.",
+    paragraph6: "During his high school and collegiate career, Kusema played for a variety of clubs, including Marietta F.C. receiving the titles of Best Offensive Player, Team Co-Captain, Leading Goal Scorer, and Saturn Futbol Club, which they became League Champions and US National Open Cup Indoor Champions, it became clear that Kusema had a bright future in the world of soccer.",
+}
+
+export const aboutPlayingCareer = [
+    {
+        years: "2002-2003",
+        club: "Marietta F.C.",
+    },
+    {
+        years: "2003-2004",
+        club: "Reinhardt University",
+    },
+    {
+        years: "2005-2006",
+        club: "Saturn Futbol Club",
+    },    
+    {
+        years: "2008-2009",
+        club: "Toronto Croatia Football Club",
+    },
+    {
+        years: "2010 -2012",
+        club: "Brampton City United",
+    },
+    {
+        years: "2012-2016",
+        club: "Lakeshore United",
+    },
+]
+
+export const aboutAchievements = [
+    {
+        year: "2000-2001",
+        achievement: "Team MVP",
+    },
+    {
+        year: "2002-2003",
+        achievement: "Metro-North Classic Finalist",
+    },
+    {
+        year: "2003",
+        achievement: "Best Offensive Player",
+    },    
+    {
+        year: "2003",
+        achievement: "Team Co-Captain",
+    },
+    {
+        year: "2003",
+        achievement: "Leading goal scorer",
+    },
+    {
+        year: "2006",
+        achievement: "Saturn International League Champions",
+    },
+    {
+        year: "2006",
+        achievement: "US National Open Cup Indoor Champions",
+    },
+    {
+        year: "2010",
+        achievement: "CSL League Champions",
+    },
+    {
+        year: "2011",
+        achievement: "Intramural Soccer Champions",
+    },
+    {
+        year: "2012",
+        achievement: "Men's Outdoor Summer League Champions",
+    },
+    {
+        year: "2014",
+        achievement: "Ukrainian Tournament Champions",
+    },
+    {
+        year: "2014",
+        achievement: "Lakeshore Champions (In season Tournament)",
+    },
+]
