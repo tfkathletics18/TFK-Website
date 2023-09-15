@@ -119,7 +119,7 @@ export const footerDetails = {
 }
 
 export const aboutTheCoach = {
-    pargraph1: "In 2007 Kusema migrated to Canada from the USA. Between 2008-16, he was a part of 3 different clubs. The first, Toronto Croatia Football Club. He also played with Brampton City United for 2 seasons, where his team became CSL Reserve Champions. There were then four seasons spent with Lakeshore United, which saw them winning the Ukrainian Tournament as well as become Champions of the in-season tournament.",
+    paragraph1: "In 2007 Kusema migrated to Canada from the USA. Between 2008-16, he was a part of 3 different clubs. The first, Toronto Croatia Football Club. He also played with Brampton City United for 2 seasons, where his team became CSL Reserve Champions. There were then four seasons spent with Lakeshore United, which saw them winning the Ukrainian Tournament as well as become Champions of the in-season tournament.",
     paragraph2: "Since leaving Lakeshore United in 2016, Kusema has dedicated his time to teaching other younger players to go from good to great without losing a love of the sport. This is what led to him establishing Total Fitness Kinetics: Athletic Performance.",
     paragraph3: "With the goal of offering high-quality training programs for youth soccer players at an affordable price, TFK Athletic Performance is responsible for training dozens of future stars. And behind all of it is Kusema as he strives to teach and inspire players under 8-17.",
     paragraph4: "Tinashe Kusema, has been involved in the world of soccer for as long as he can remember. Although he is now a certified personal trainer, he has been a player for far longer.",
