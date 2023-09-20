@@ -22,6 +22,11 @@ const NavBar = () => {
                         <p className={`navigation__text ${location.pathname === "/gallery" ? "navigation__text--current" : ""}`}>Gallery</p>
                     </NavLink>
                 </li>
+                <li className="navigation__item">
+                    <NavLink to="/contact" className="navigation__link">
+                        <p className={`navigation__text ${location.pathname === "/contact" ? "navigation__text--current" : ""}`}>Contact</p>
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

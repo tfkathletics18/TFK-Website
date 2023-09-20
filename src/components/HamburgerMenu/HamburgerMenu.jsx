@@ -48,6 +48,11 @@ function HamburgerMenu() {
                             <p className={`menu__text ${location.pathname === "/gallery" ? "menu__text--current" : ""}`}>Gallery</p>
                         </NavLink>
                     </li>
+                    <li className="menu__item">
+                        <NavLink to="/contact" className="menu__link">
+                            <p className={`menu__text ${location.pathname === "/contact" ? "menu__text--current" : ""}`}>Contact</p>
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
