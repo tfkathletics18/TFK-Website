@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
+import axios from 'axios';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -35,6 +36,8 @@ const focusColour = {
     }
   }
 }
+
+const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -112,14 +115,22 @@ function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validateForm()) {
-      console.log({
+      axios.post("https://api.web3forms.com/submit", {
+        access_key: formSubmissionKey,
+        subject: "New message from TFK Website",
+        email: email,
+        name: firstName + " " + lastName,
+        message: message,
+      }).then(
+        console.log({
         firstName: firstName,
         lastName: lastName,
         email: email,
         message: message,
       })
-    } else {
-      console.error("error");
+      ).catch((error) => {
+        console.error(error);
+      })
     }
   };
 
