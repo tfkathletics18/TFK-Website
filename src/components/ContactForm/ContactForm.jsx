@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -36,13 +37,90 @@ const focusColour = {
 }
 
 function ContactForm() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [validFirstName, setValidFirstName] = useState(true);
+  const [validLastName, setValidLastName] = useState(true);
+  const [validEmail, setValidEmail] = useState(true);
+  const [validMessage, setValidMessage] = useState(true);
+
+  const handleChangeFirstName = (event) => {
+    setFirstName(event.target.value);
+  };
+
+  const handleChangeLastName = (event) => {
+    setLastName(event.target.value);
+  };
+
+  const handleChangeEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleChangeMessage = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const validateForm = () => {
+    // Variable to check if form is valid
+    let isFormValid = true;
+
+    // Check that these fields at least contain a value
+    if(!firstName)
+    {
+      setValidFirstName(false)
+      isFormValid = false;
+    } else {
+      setValidFirstName(true)
+    }
+
+    if(!lastName)
+    {
+      setValidLastName(false)
+      isFormValid = false;
+    } else {
+      setValidLastName(true)
+    }
+
+    if(!message)
+    {
+      setValidMessage(false)
+      isFormValid = false;
+    } else {
+      setValidMessage(true)
+    }
+
+    // Check email
+    // Use a regex expression to check for a valid email:
+    // Must have 1 or more alphanumeric characters (allows for a dot or hyphen as well) before an @ sign
+    // Must then 1 or more alphanumeric characters before (not allowing for a dot or hyphen) before a .
+    // Must be followed by a domain which only has letters and is between 2-10 characters long
+    const emailRegexValidation =
+      /^([a-zA-Z\d.-]+)@([a-zA-Z\d]+)\.([a-zA-z]{2,10})$/;
+    if (!email.match(emailRegexValidation)) {
+      setValidEmail(false);
+      isFormValid = false;
+    } else {
+      setValidEmail(true);
+    }
+
+    // Check that every field is valid
+    return isFormValid;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    if (validateForm()) {
+      console.log({
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        message: message,
+      })
+    } else {
+      console.error("error");
+    }
   };
 
   return (
@@ -74,6 +152,10 @@ function ContactForm() {
                   id="firstName"
                   label="First Name"
                   autoFocus
+                  value={firstName}
+                  onChange={handleChangeFirstName}
+                  error={!validFirstName}
+                  helperText={!validFirstName ? "Please enter a name" : ""}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -84,6 +166,10 @@ function ContactForm() {
                   id="lastName"
                   label="Last Name"
                   name="lastName"
+                  value={lastName}
+                  onChange={handleChangeLastName}
+                  error={!validLastName}
+                  helperText={!validLastName ? "Please enter a name" : ""}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -94,6 +180,10 @@ function ContactForm() {
                   id="email"
                   label="Email Address"
                   name="email"
+                  value={email}
+                  onChange={handleChangeEmail}
+                  error={!validEmail}
+                  helperText={!validEmail ? "Please enter a valid email" : ""}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -106,6 +196,10 @@ function ContactForm() {
                   id="message"
                   multiline
                   minRows={3}
+                  value={message}
+                  onChange={handleChangeMessage}
+                  error={!validMessage}
+                  helperText={!validMessage ? "Please enter a message" : ""}
                 />
               </Grid>
             </Grid>
