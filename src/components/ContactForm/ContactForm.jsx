@@ -1,6 +1,7 @@
-import * as React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import SnackbarAlert from '../SnackbarAlert/SnackbarAlert';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -37,7 +38,7 @@ const focusColour = {
   }
 }
 
-const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY; // Access key to send form submissions to gmail accoun
 
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -48,6 +49,8 @@ function ContactForm() {
   const [validLastName, setValidLastName] = useState(true);
   const [validEmail, setValidEmail] = useState(true);
   const [validMessage, setValidMessage] = useState(true);
+  const [open, setOpen] = useState(false); // Trigger alert to open on form submission
+  const [successfulSubmission, setSuccessfulSubmission] = useState(false); // Determine which alert to show
 
   const handleChangeFirstName = (event) => {
     setFirstName(event.target.value);
@@ -112,6 +115,8 @@ function ContactForm() {
     return isFormValid;
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validateForm()) {
@@ -121,111 +126,122 @@ function ContactForm() {
         email: email,
         name: firstName + " " + lastName,
         message: message,
-      }).then(
-        console.log({
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        message: message,
       })
-      ).catch((error) => {
+      .then((response) => {
+        if (response.status = 200) {
+          setOpen(true);
+          setSuccessfulSubmission(true);
+          setTimeout(() => {
+            navigate("/")
+          }, 4000);
+        } else {
+            setOpen(true);
+            setSuccessfulSubmission(false);
+        }
+      })
+      .catch((error) => {
+        setOpen(true),
+        setSuccessfulSubmission(false),
         console.error(error);
       })
     }
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
-            <ContactMailIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Contact Us
-          </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  sx={focusColour}
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                  value={firstName}
-                  onChange={handleChangeFirstName}
-                  error={!validFirstName}
-                  helperText={!validFirstName ? "Please enter a name" : ""}
-                />
+    <main className="contact">
+      <ThemeProvider theme={defaultTheme}>
+        <Container component="main" maxWidth="xs">
+          <CssBaseline />
+          <Box
+            sx={{
+              marginTop: 8,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+              <ContactMailIcon />
+            </Avatar>
+            <Typography component="h1" variant="h5">
+              Contact Us
+            </Typography>
+            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    sx={focusColour}
+                    name="firstName"
+                    required
+                    fullWidth
+                    id="firstName"
+                    label="First Name"
+                    autoFocus
+                    value={firstName}
+                    onChange={handleChangeFirstName}
+                    error={!validFirstName}
+                    helperText={!validFirstName ? "Please enter a name" : ""}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    sx={focusColour}
+                    required
+                    fullWidth
+                    id="lastName"
+                    label="Last Name"
+                    name="lastName"
+                    value={lastName}
+                    onChange={handleChangeLastName}
+                    error={!validLastName}
+                    helperText={!validLastName ? "Please enter a name" : ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    sx={focusColour}
+                    required
+                    fullWidth
+                    id="email"
+                    label="Email Address"
+                    name="email"
+                    value={email}
+                    onChange={handleChangeEmail}
+                    error={!validEmail}
+                    helperText={!validEmail ? "Please enter a valid email" : ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    sx={focusColour}
+                    required
+                    fullWidth
+                    name="message"
+                    label="Message"
+                    id="message"
+                    multiline
+                    minRows={3}
+                    value={message}
+                    onChange={handleChangeMessage}
+                    error={!validMessage}
+                    helperText={!validMessage ? "Please enter a message" : ""}
+                  />
+                </Grid>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  sx={focusColour}
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  value={lastName}
-                  onChange={handleChangeLastName}
-                  error={!validLastName}
-                  helperText={!validLastName ? "Please enter a name" : ""}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  sx={focusColour}
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  value={email}
-                  onChange={handleChangeEmail}
-                  error={!validEmail}
-                  helperText={!validEmail ? "Please enter a valid email" : ""}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  sx={focusColour}
-                  required
-                  fullWidth
-                  name="message"
-                  label="Message"
-                  id="message"
-                  multiline
-                  minRows={3}
-                  value={message}
-                  onChange={handleChangeMessage}
-                  error={!validMessage}
-                  helperText={!validMessage ? "Please enter a message" : ""}
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Send Message
-            </Button>
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+              >
+                Send Message
+              </Button>
+            </Box>
           </Box>
-        </Box>
-      </Container>
-    </ThemeProvider>
+        </Container>
+      </ThemeProvider>
+      <SnackbarAlert open={open} setOpen={setOpen} successfulSubmission={successfulSubmission}/>
+    </main>
   );
 }
 
