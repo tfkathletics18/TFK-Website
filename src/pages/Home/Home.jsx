@@ -1,9 +1,15 @@
-import { trainingRequirements, services, servicesIcons } from '../../constants';
+import { useState } from 'react';
+import { trainingRequirements, services, servicesIcons, serviceTrailerVideos } from '../../constants';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import Hero from '../../components/Hero/Hero';
+import VideoModal from '../../components/VideoModal/VideoModal';
 import "./Home.scss";
 
+
 function Home() {
+  const [ openVideoModal, setOpenVideoModal ] = useState(false);
+  const [ displayVideoIndex , setDisplayVideoIndex ] = useState(0);
+
   return (
     <main className="home">
       <Hero />
@@ -24,7 +30,8 @@ function Home() {
         </div>
       </section>
       <section className="home-services">
-        {services.map((service, index) => <ServiceCard key={index} Icon={servicesIcons[index]} service={service}/>)}
+        {services.map((service, index) => <ServiceCard key={index} Icon={servicesIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVideoIndex={setDisplayVideoIndex}/>)}
+        <VideoModal openVideoModal={openVideoModal} setOpenVideoModal={setOpenVideoModal} video={serviceTrailerVideos[displayVideoIndex] || serviceTrailerVideos[0]}/>
       </section>
     </main>
 
