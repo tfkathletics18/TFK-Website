@@ -4,6 +4,8 @@ import { RiTeamFill, RiRunFill } from "react-icons/ri";
 import { GiSoccerKick, GiGymBag } from "react-icons/gi";
 import { TbSoccerField } from "react-icons/tb";
 import { VscRemoteExplorer } from "react-icons/vsc";
+import Video1 from "../assets/videos/TestVideo1.mp4";
+import Video2 from "../assets/videos/TestVideo2.mp4";
 
 export const heroPlayers = [
     "Cristiano Ronaldo, Al-Nassr FC",
@@ -104,6 +106,8 @@ export const servicesIcons = [
     GiGymBag,
     VscRemoteExplorer, 
 ]
+
+export const serviceTrailerVideos = [Video1, Video2];
 
 export const footerDetails = {
     heading: "TFK Athletic Performance",
