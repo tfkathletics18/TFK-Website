@@ -4,8 +4,13 @@ import { RiTeamFill, RiRunFill } from "react-icons/ri";
 import { GiSoccerKick, GiGymBag } from "react-icons/gi";
 import { TbSoccerField } from "react-icons/tb";
 import { VscRemoteExplorer } from "react-icons/vsc";
-import Video1 from "../assets/videos/TestVideo1.mp4";
-import Video2 from "../assets/videos/TestVideo2.mp4";
+import OnevOne from "../assets/videos/1on1.mp4";
+import Group from "../assets/videos/group.mp4";
+import Body from "../assets/videos/body.mp4";
+import Position from "../assets/videos/position.mp4";
+import Speed from "../assets/videos/speed.mp4";
+import Sport from "../assets/videos/sport.mp4";
+
 
 export const heroPlayers = [
     "Cristiano Ronaldo, Al-Nassr FC",
@@ -107,7 +112,7 @@ export const servicesIcons = [
     VscRemoteExplorer, 
 ]
 
-export const serviceTrailerVideos = [Video1, Video2];
+export const serviceTrailerVideos = [OnevOne, Group, Group, Body, Position, Speed, Sport, OnevOne];
 
 export const footerDetails = {
     heading: "TFK Athletic Performance",
