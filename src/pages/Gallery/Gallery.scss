@@ -12,4 +12,13 @@
     @include desktop {
         padding: 0 5rem;
     }
+
+    &__title {
+        @include textStyle($plain-black, 2.5rem, 3rem, 700);
+        margin: 2.25rem 0;
+        
+        @include tablet {
+            @include textStyle($plain-black, 3.25rem, 4.25rem, 700);
+        }
+    }
 }
