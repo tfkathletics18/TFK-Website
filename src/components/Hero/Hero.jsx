@@ -29,8 +29,12 @@ function Hero() {
   
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleClickCoach = () => {
       navigate("/about");
+  }
+
+  const handleClickGetStarted = () => {
+    navigate("/contact");
   }
 
   if (screenWidth < 768) {
@@ -49,8 +53,8 @@ function Hero() {
           <div className="hero__cta-block">
               <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
               <div className="hero__buttons">
-                <Button label="Meet The Coach" onClickFunction={handleClick}/>
-                <a href="#contact"><Button label="Get Started" /></a>
+                <Button label="Meet The Coach" onClickFunction={handleClickCoach}/>
+                <Button label="Get Started" onClickFunction={handleClickGetStarted}/>
               </div>
           </div>
       </section>
@@ -93,8 +97,8 @@ function Hero() {
             <div className="hero__cta-block">
                 <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
                 <div className="hero__buttons">
-                  <Button label="Meet The Coach" onClickFunction={handleClick}/>
-                  <Button label="Get Started" />
+                  <Button label="Meet The Coach" onClickFunction={handleClickCoach}/>
+                  <Button label="Get Started" onClickFunction={handleClickGetStarted}/>
                 </div>
             </div>
           </div>
@@ -134,8 +138,8 @@ function Hero() {
             <div className="hero__cta-block">
                 <h2 className="hero__title hero__title--second head-text head-text--white">EXPERIENCE THE BENEFITS</h2>
                 <div className="hero__buttons">
-                  <Button label="Meet The Coach" onClickFunction={handleClick}/>
-                  <Button label="Get Started" />
+                  <Button label="Meet The Coach" onClickFunction={handleClickCoach}/>
+                  <Button label="Get Started" onClickFunction={handleClickGetStarted}/>
                 </div>
             </div>
           </div>
