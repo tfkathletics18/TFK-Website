@@ -89,12 +89,17 @@
         cursor: pointer;
         outline: none;
         @include textStyle($plain-white, 1rem, 20px, 600);
+        transition: all 0.3s ease;
     
         @include tablet {
             max-width: none;
             position: absolute;
             bottom: 1.25rem;
             right: 12.5%;
+        }
+
+        &:hover {
+            background-color: $secondary-red;
         }
     }
 }
