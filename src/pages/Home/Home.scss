@@ -24,10 +24,18 @@
         @include desktop {
             width: 55%;
         }
+
+        &--extra-bottom-margin {
+            margin-bottom: 3rem;
+        }
     }
 
     &__title {
         margin: 3rem 0 1rem 0;
+
+        &--less-margin {
+            margin-bottom: 1rem;
+        }
     }
 
     &__list {
