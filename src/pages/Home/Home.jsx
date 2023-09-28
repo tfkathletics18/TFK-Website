@@ -23,7 +23,7 @@ function Home() {
           <p className="home-intro__subtitle p-text">We tailor our training sessions to the level of the athlete. Whether they are just beginning their soccer journey or are an elite player looking to take their skills to the next level, we will help them achieve their goals. Working with a personal coach to develop this specialized training program will improve many areas of their game inlcuding shooting, dribbling, passing & recieving, ball mastery, and positioning.</p>
         </div>
         <div className="home-intro__google-review-widget-container">
-          <div class="elfsight-app-756aff63-bfca-4ee9-81fe-6024a0a51083"></div>
+          <div className="elfsight-app-756aff63-bfca-4ee9-81fe-6024a0a51083"></div>
         </div>
         <div className="home-intro__container">
           <h2 className="home-intro__title--less-margin head-text">WHAT WE OFFER</h2>
