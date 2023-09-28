@@ -16,11 +16,11 @@ function Home() {
       <section className="home-intro">
         <div className="home-intro__container">
           <h2 className="home-intro__title head-text">OUR MISSION</h2>
-          <p className="home-intro__subtitle p-text">Provide individual personal coaching to young passionate athletes with the love of soccer. Our intimate training session will allow us to effectively identify areas of improvement for our trainee's, so they can gain a competitive edge in the modern game.</p>
+          <p className="home-intro__subtitle p-text p-text--300">Provide individual personal coaching to young passionate athletes with the love of soccer. Our intimate training session will allow us to effectively identify areas of improvement for our trainee's, so they can gain a competitive edge in the modern game.</p>
         </div>
         <div className="home-intro__container home-intro__container--extra-bottom-margin">
           <h2 className="home-intro__title head-text">THE TFK VALUE</h2>
-          <p className="home-intro__subtitle p-text">We tailor our training sessions to the level of the athlete. Whether they are just beginning their soccer journey or are an elite player looking to take their skills to the next level, we will help them achieve their goals. Working with a personal coach to develop this specialized training program will improve many areas of their game inlcuding shooting, dribbling, passing & recieving, ball mastery, and positioning.</p>
+          <p className="home-intro__subtitle p-text p-text--300">We tailor our training sessions to the level of the athlete. Whether they are just beginning their soccer journey or are an elite player looking to take their skills to the next level, we will help them achieve their goals. Working with a personal coach to develop this specialized training program will improve many areas of their game inlcuding shooting, dribbling, passing & recieving, ball mastery, and positioning.</p>
         </div>
         <div className="home-intro__google-review-widget-container">
           <div className="elfsight-app-756aff63-bfca-4ee9-81fe-6024a0a51083"></div>
@@ -28,7 +28,7 @@ function Home() {
         <div className="home-intro__container">
           <h2 className="home-intro__title--less-margin head-text">WHAT WE OFFER</h2>
           <ul className="home-intro__list">
-            {trainingRequirements.map((item, index) => <li key={index} className="home-intro__list-item p-text">{item}</li>)}
+            {trainingRequirements.map((item, index) => <li key={index} className="home-intro__list-item p-text p-text--light">{item}</li>)}
           </ul>
         </div>
       </section>
