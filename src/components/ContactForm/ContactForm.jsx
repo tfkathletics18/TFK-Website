@@ -128,7 +128,7 @@ function ContactForm() {
         message: message,
       })
       .then((response) => {
-        if (response.status = 200) {
+        if (response.status === 200) {
           setOpen(true);
           setSuccessfulSubmission(true);
           setTimeout(() => {
