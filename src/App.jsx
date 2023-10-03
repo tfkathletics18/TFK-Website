@@ -5,7 +5,9 @@ import Gallery from './pages/Gallery/Gallery'
 import Contact from './pages/Contact/Contact'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import ScrollArrow from './components/ScrollArrow/ScrollArrow'
 import './App.scss'
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <ScrollArrow />
         <Footer />
       </div>
     </BrowserRouter>

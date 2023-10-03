@@ -1,0 +1,16 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.scroll-arrow {
+    &__icon {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        height: 2.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        z-index: 1;
+        background-color: $plain-white;
+        border-radius: 50%;
+    }
+}
