@@ -3,6 +3,8 @@ import { trainingRequirements, services, servicesIcons, serviceTrailerVideos } f
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import Hero from '../../components/Hero/Hero';
 import VideoModal from '../../components/VideoModal/VideoModal';
+import ORSClogo from "../../assets/images/ORSC_logo.png";
+import TSFClogo from "../../assets/images/TSFC_logo.png";
 import "./Home.scss";
 
 
@@ -35,6 +37,16 @@ function Home() {
       <section className="home-services">
         {services.map((service, index) => <ServiceCard key={index} Icon={servicesIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVideoIndex={setDisplayVideoIndex}/>)}
         <VideoModal openVideoModal={openVideoModal} setOpenVideoModal={setOpenVideoModal} video={serviceTrailerVideos[displayVideoIndex] || serviceTrailerVideos[0]}/>
+      </section>
+      <section className="home-sucess-stories">
+        <div className="home-sucess-stories__container">
+          <h2 className="home-sucess-stories__title head-text">SUCCESS STORIES</h2>
+          <p className="home--sucess-stories__subtitle p-text p-text--300">Some of the clubs and academies whose athletes we have helped train.</p>
+          <div className="home-sucess-stories__logo-container">
+            <img src={ORSClogo} alt="Oak Ridges Soccer Club Logo" className="home-sucess-stories__logo"/>
+            <img src={TSFClogo} alt="Toronto Skillz Soccer Academy Logo" className="home-sucess-stories__logo"/>
+          </div>
+        </div>
       </section>
     </main>
 
