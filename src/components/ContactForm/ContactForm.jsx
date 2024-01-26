@@ -12,6 +12,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { IoMdReturnLeft } from 'react-icons/io';
 
 const defaultTheme = createTheme({
     typography: {
@@ -43,10 +44,12 @@ const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY; // Access k
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [validFirstName, setValidFirstName] = useState(true);
   const [validLastName, setValidLastName] = useState(true);
+  const [validPhoneNumber, setValidPhoneNumber] = useState(true);
   const [validEmail, setValidEmail] = useState(true);
   const [validMessage, setValidMessage] = useState(true);
   const [open, setOpen] = useState(false); // Trigger alert to open on form submission
@@ -58,6 +61,10 @@ function ContactForm() {
 
   const handleChangeLastName = (event) => {
     setLastName(event.target.value);
+  };
+
+  const handleChangePhoneNumber = (event) => {
+    setPhoneNumber(event.target.value);
   };
 
   const handleChangeEmail = (event) => {
@@ -73,6 +80,7 @@ function ContactForm() {
     let isFormValid = true;
 
     // Check that these fields at least contain a value
+    setFirstName(firstName.trim()) // trim any additional white spaces user might have entered
     if(!firstName)
     {
       setValidFirstName(false)
@@ -81,6 +89,7 @@ function ContactForm() {
       setValidFirstName(true)
     }
 
+    setLastName(lastName.trim()) // trim any additional white spaces user might have entered
     if(!lastName)
     {
       setValidLastName(false)
@@ -89,6 +98,7 @@ function ContactForm() {
       setValidLastName(true)
     }
 
+    setMessage(message.trim()) // trim any additional white spaces user might have entered
     if(!message)
     {
       setValidMessage(false)
@@ -97,11 +107,30 @@ function ContactForm() {
       setValidMessage(true)
     }
 
+    // Check phone number
+    // Use a regex expression to check for a valid phone number:
+    // Allows for optional country code (1-3 digits and can use a + sign or not)
+    // Must then have a 3 digit area code
+    // Must then have a 3 digit exhcange number
+    // Must then have a 4 digit subscriber number
+    // Allows for optional extension number
+    // Allows for use of brackets on area code and hyphens or spaces between digits if desired
+    setPhoneNumber(phoneNumber.trim()) // trim any additional white spaces user might have entered before validating
+    const phoneRegexValidation =
+      /^(?:\+?(\d{1,3}))?[- (]*(\d{3})[- )]*(\d{3})[- ]*(\d{4})(?: *x(\d+))?$/;
+    if (!phoneNumber.match(phoneRegexValidation)) {
+      setValidPhoneNumber(false);
+      isFormValid = false;
+    } else {
+      setValidPhoneNumber(true);
+    }
+
     // Check email
     // Use a regex expression to check for a valid email:
     // Must have 1 or more alphanumeric characters (allows for a dot or hyphen as well) before an @ sign
     // Must then 1 or more alphanumeric characters before (not allowing for a dot or hyphen) before a .
     // Must be followed by a domain which only has letters and is between 2-10 characters long
+    setEmail(email.trim()) // trim any additional white spaces user might have entered before validating
     const emailRegexValidation =
       /^([a-zA-Z\d.-]+)@([a-zA-Z\d]+)\.([a-zA-z]{2,10})$/;
     if (!email.match(emailRegexValidation)) {
@@ -195,6 +224,20 @@ function ContactForm() {
                     onChange={handleChangeLastName}
                     error={!validLastName}
                     helperText={!validLastName ? "Please enter a name" : ""}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    sx={focusColour}
+                    required
+                    fullWidth
+                    id="phoneNumber"
+                    label="Phone Number"
+                    name="phoneNumber"
+                    value={phoneNumber}
+                    onChange={handleChangePhoneNumber}
+                    error={!validPhoneNumber}
+                    helperText={!validPhoneNumber ? "Please enter a valid phone number" : ""}
                   />
                 </Grid>
                 <Grid item xs={12}>
