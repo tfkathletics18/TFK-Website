@@ -16,8 +16,8 @@ export const heroPlayers = [
     "Cristiano Ronaldo, Al-Nassr FC",
     "Erling Haaland, Manchester City",
     "Phil Foden, Manchester United",
-    "Jadon Sancho, Manchester United",
-    "Christian Pulisic, Chelsea",
+    "Jadon Sancho, Borussia Dortmund",
+    "Christian Pulisic, AC Milan",
     "Alex Morgan, USWNT",
 ]
 
@@ -26,7 +26,7 @@ export const trainingRequirements = [
     "Maximum Number of Players Per Session: 10",
     "Minimum Number of Players for Small Group Training: 3",
     "Targeted Areas: Agility, Technique, Power, Strength",
-    "Location: Wismer Park (Spring/Summer/Fall), Various GTA Indoor Gyms (Winter)",
+    "Location: Russell Tilt Park (Outdoor), Bayview Community Centre (Indoor)",
 ]
 
 export const services = [
@@ -117,7 +117,6 @@ export const serviceTrailerVideos = [OnevOne, Group, Group, Body, Position, Spee
 export const footerDetails = {
     heading: "TFK Athletic Performance",
     description: "Whether you want to bring your game to the next level or just want to spend some time playing a fun sport, this is the right place for you.  Book a session or get answers to any questions you might have.",
-    location: "Wismer Park (Castlemore Rd Between Mccowan and Markham Rd.)",
     phone: "+1 (647) 523-3702",
     email: "totalfitnesskinetics@gmail.com",
     instagram: "https://www.instagram.com/tfkathleticperformance",

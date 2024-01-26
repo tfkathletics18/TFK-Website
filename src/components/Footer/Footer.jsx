@@ -9,7 +9,6 @@ function Footer() {
     <footer className="footer">
       <h1 className="title-text title-text--white footer__title">{footerDetails.heading}</h1>
       <p className="p-text p-text--grey footer__description">{footerDetails.description}</p>
-      <p className="p-text p-text--grey footer__location">{footerDetails.location}</p>
       <div className="footer__container">
         <MdPhone className="footer__icon" />
         <a href={"tel:" + footerDetails.phone} target="_blank" rel="noopener noreferrer" className="p-text p-text--white footer__link">{footerDetails.phone}</a>
