@@ -123,6 +123,12 @@ function ContactForm() {
       isFormValid = false;
     } else {
       setValidPhoneNumber(true);
+      // If the phone number is exactly 10 digits, meaning the user didn't format the input themselves,
+      // then it will be formatted to be easier to read when the contact email is received
+      // Format will be: (123) 456-7890
+      if (phoneNumber.length === 10) {
+        setPhoneNumber(`(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`)
+      }
     }
 
     // Check email
@@ -152,6 +158,7 @@ function ContactForm() {
       axios.post("https://api.web3forms.com/submit", {
         access_key: formSubmissionKey,
         subject: "New message from TFK Website",
+        phoneNumber: phoneNumber,
         email: email,
         name: firstName + " " + lastName,
         message: message,
