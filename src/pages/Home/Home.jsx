@@ -40,7 +40,7 @@ function Home() {
       </section>
       <section className="home-sucess-stories">
         <div className="home-sucess-stories__container">
-          <h2 className="home-sucess-stories__title head-text">SUCCESS STORIES</h2>
+          <h2 className="home-sucess-stories__title head-text">CLUBS WE'VE WORKED WITH</h2>
           <p className="home--sucess-stories__subtitle p-text p-text--300">Some of the clubs and academies whose athletes we have helped train.</p>
           <div className="home-sucess-stories__logo-container">
             <img src={ORSClogo} alt="Oak Ridges Soccer Club Logo" className="home-sucess-stories__logo"/>

@@ -15,7 +15,7 @@ import Sport from "../assets/videos/sport.mp4";
 export const heroPlayers = [
     "Cristiano Ronaldo, Al-Nassr FC",
     "Erling Haaland, Manchester City",
-    "Phil Foden, Manchester United",
+    "Phil Foden, Manchester City",
     "Jadon Sancho, Borussia Dortmund",
     "Christian Pulisic, AC Milan",
     "Alex Morgan, USWNT",
