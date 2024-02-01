@@ -54,6 +54,7 @@ function ContactForm() {
   const [validMessage, setValidMessage] = useState(true);
   const [open, setOpen] = useState(false); // Trigger alert to open on form submission
   const [successfulSubmission, setSuccessfulSubmission] = useState(false); // Determine which alert to show
+  let formattedPhoneNumber = "";
 
   const handleChangeFirstName = (event) => {
     setFirstName(event.target.value);
@@ -127,7 +128,7 @@ function ContactForm() {
       // then it will be formatted to be easier to read when the contact email is received
       // Format will be: (123) 456-7890
       if (phoneNumber.length === 10) {
-        setPhoneNumber(`(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`)
+        formattedPhoneNumber = `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`
       }
     }
 
@@ -158,7 +159,7 @@ function ContactForm() {
       axios.post("https://api.web3forms.com/submit", {
         access_key: formSubmissionKey,
         subject: "New message from TFK Website",
-        phoneNumber: phoneNumber,
+        phoneNumber: formattedPhoneNumber,
         email: email,
         name: firstName + " " + lastName,
         message: message,
