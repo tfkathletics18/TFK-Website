@@ -1,7 +1,7 @@
 import headshot from "../../assets/images/about1.jpg";
 import teams from "../../assets/images/about2.jpg";
 import freestyling from "../../assets/images/about3.jpg";
-import trophy from "../../assets/images/about4.jpg";
+import trophy from "../../assets/images/about4.JPG";
 import gameplay from "../../assets/images/about5.jpg";
 import { aboutTheCoach, aboutPlayingCareer, aboutAchievements } from "../../constants";
 import "./About.scss";
