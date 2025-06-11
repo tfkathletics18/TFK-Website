@@ -212,3 +212,58 @@ export const aboutAchievements = [
         achievement: "Lakeshore Champions (In season Tournament)",
     },
 ]
+
+export const aboutCertifications = [
+    {
+        certID: 1,
+        certification: "Coaching Soccer in Canada Certified",
+    },
+    {
+        certID: 2,
+        certification: "Canada Soccer C License",
+    },
+    {
+        certID: 3,
+        certification: "U.S. Soccer Grassroots Certified",
+    },    
+    {
+        certID: 4,
+        certification: "Safe Sports Training Certified",
+    },
+    {
+        certID: 5,
+        certification: "Canada FitPro (Personal Training Certificated)",
+    },
+    {
+        certID: 6,
+        certification: "Crisis Prevention & Intervention",
+    },
+    {
+        certID: 7,
+        certification: "CPR A & AED",
+    },
+    {
+        certID: 8,
+        certification: "Darby Training Systems",
+    },
+    {
+        certID: 9,
+        certification: "Make Ethical Decisions",
+    },
+    {
+        certID: 10,
+        certification: "Strength & Conditioning",
+    },
+    {
+        certID: 11,
+        certification: "Mobility and Strength Training",
+    },
+    {
+        certID: 12,
+        certification: "Joint Health & Stability",
+    },
+    {
+        certID: 13,
+        certification: "SAQ - Speed, Agility, Quickness",
+    },
+]

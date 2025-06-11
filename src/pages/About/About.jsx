@@ -3,7 +3,8 @@ import teams from "../../assets/images/about2.jpg";
 import freestyling from "../../assets/images/about3.jpg";
 import trophy from "../../assets/images/about4.JPG";
 import gameplay from "../../assets/images/about5.jpg";
-import { aboutTheCoach, aboutPlayingCareer, aboutAchievements } from "../../constants";
+import { aboutTheCoach, aboutPlayingCareer, aboutAchievements, aboutCertifications } from "../../constants";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import "./About.scss";
 
 function About() {
@@ -18,6 +19,41 @@ function About() {
         <p className="p-text about__paragraph">{aboutTheCoach.paragraph1}</p>
         <p className="p-text about__paragraph">{aboutTheCoach.paragraph2}</p>
         <p className="p-text about__paragraph">{aboutTheCoach.paragraph3}</p>
+        <div className="about__center-container-column">
+          <h2 className="head-text head-text--red about__header-title">CERTIFCATIONS</h2>
+          <div className="about__certifcation-container">
+            <div className="about__certification-sub-container">
+              <ul className="about__list">
+                {aboutCertifications.filter((certifcation) => certifcation.certID <= 5)
+                .map((filteredItem) => { 
+                  return (
+                    <li key={filteredItem.certID} className="p-text about__list-item"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {filteredItem.certification}</li>
+                  )
+                })}
+              </ul>
+            </div>
+            <div className="about__certification-sub-container">
+              <ul className="about__list">
+                {aboutCertifications.filter((certifcation) => certifcation.certID > 5 && certifcation.certID <=9)
+                .map((filteredItem) => { 
+                  return (
+                    <li key={filteredItem.certID} className="p-text about__list-item"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {filteredItem.certification}</li>
+                  )
+                })}
+              </ul>
+            </div>
+            <div className="about__certification-sub-container">
+              <ul className="about__list">
+                {aboutCertifications.filter((certifcation) => certifcation.certID >= 10)
+                .map((filteredItem) => { 
+                  return (
+                    <li key={filteredItem.certID} className="p-text about__list-item"><IoMdCheckmarkCircleOutline className="hero__checkmark"/> {filteredItem.certification}</li>
+                  )
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
         <div className="about__picture-container">
           <img src={gameplay} alt="tinashe kusema in game" className="about__picture"/>
         </div>
