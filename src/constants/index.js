@@ -16,7 +16,7 @@ export const heroPlayers = [
     "Cristiano Ronaldo, Al-Nassr FC",
     "Erling Haaland, Manchester City",
     "Phil Foden, Manchester City",
-    "Jadon Sancho, Borussia Dortmund",
+    "Jadon Sancho, Chelsea",
     "Christian Pulisic, AC Milan",
     "Alex Morgan, USWNT",
 ]
