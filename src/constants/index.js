@@ -267,3 +267,11 @@ export const aboutCertifications = [
         certification: "SAQ - Speed, Agility, Quickness",
     },
 ]
+
+export const summer2025Schedule = [
+    { day: "Saturday", ageGroup: "8-12", level: "Grassroots", timeSlot: "10:00 AM - 11:00 AM", location: "Mitchell Pond, Richmond Hill" },
+    { day: "Saturday", ageGroup: "13-17", level: "Intermediate/Rep", timeSlot: "11:30 AM - 12:30 PM", location: "Mitchell Pond, Richmond Hill" },
+    { day: "Sunday", ageGroup: "8-12", level: "Grassroots", timeSlot: "10:00 AM - 11:00 AM", location: "Bayview Hill Park, Richmond Hill" },
+    { day: "Sunday", ageGroup: "13-17", level: "Intermediate/Rep", timeSlot: "11:30 AM - 12:30 PM", location: "Bayview Hill Park, Richmond Hill" },
+    { day: "Sunday", ageGroup: "13-17", level: "iModel & OPDL", timeSlot: "1:00 PM - 2:30 PM", location: "Bayview Hill Park, Richmond Hill" },
+]
