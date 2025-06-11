@@ -23,10 +23,10 @@ export const heroPlayers = [
 
 export const trainingRequirements = [
     "Age Groups: Under 8 - 17",
-    "Maximum Number of Players Per Session: 10",
     "Minimum Number of Players for Small Group Training: 3",
+    "Maximum Number of Players for Small Group Training: 10",
     "Targeted Areas: Agility, Technique, Power, Strength",
-    "Location: Russell Tilt Park (Outdoor), Bayview Community Centre (Indoor)",
+    "Please contact us directly if you are a club looking for full team training (15+ players)",
 ]
 
 export const services = [
