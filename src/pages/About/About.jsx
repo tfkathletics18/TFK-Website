@@ -12,7 +12,7 @@ function About() {
     <main className="about">
       <section className="about__intro">
         <h1 className="head-text about__header-title">OUR STORY</h1>
-        <h2 className="title-text about__second-title">Meet the Coach, Tinashe Kusema</h2>
+        <h2 className="second-head-text about__second-title">Meet the Coach, Tinashe Kusema</h2>
         <div className="about__headshot-container">
           <img src={headshot} alt="Tinashe Kusema" className="about__headshot"/>
         </div>

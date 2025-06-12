@@ -275,3 +275,11 @@ export const summer2025Schedule = [
     { day: "Sunday", ageGroup: "13-17", level: "Intermediate/Rep", timeSlot: "11:30 AM - 12:30 PM", location: "Bayview Hill Park, Richmond Hill" },
     { day: "Sunday", ageGroup: "13-17", level: "iModel & OPDL", timeSlot: "1:00 PM - 2:30 PM", location: "Bayview Hill Park, Richmond Hill" },
 ]
+
+export const trainingLevelDescriptions = [
+{level: "Grass Roots:", description: "Beginners or players with basic skills; emphasis on learning soccer fundamentals like passing, dribbling, shooting, and teamwork"},
+{level: "Intermediate:", description: "Level where players have some experience and understanding of the game, but are not yet at the highest levels of competition or expertise"}, 
+{level: "Rep Soccer:", description: "Competitive program for more advanced players "},
+{level: "iModel:", description: "For youth competitive level below OPDL"},
+{level: "OPDL:", description: "Focusing on developing top players and providing a high-performance training environment"},
+]
