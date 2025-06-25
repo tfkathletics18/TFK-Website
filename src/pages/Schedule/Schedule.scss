@@ -14,21 +14,21 @@
 
     &__header-title {
         margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         text-align: center;
 
         @include tablet {
             margin-top: 2.25rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__second-title {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         text-align: center;
 
         @include tablet {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -38,6 +38,11 @@
 
         @include tablet {
             margin-bottom: 2.25rem;
+        }
+
+        &--bottom {
+            list-style: none;
+            margin-bottom: 0;
         }
     }
 
@@ -119,5 +124,30 @@
         tbody tr:hover {
             background-color: #fafafa;
         }
+    }
+
+    &__third-title {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    
+        @include tablet {
+            margin-top: 2.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__subtext {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__holidays {
+        display: flex;
+        justify-content: center;
     }
 }

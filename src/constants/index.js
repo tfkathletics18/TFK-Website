@@ -283,3 +283,11 @@ export const trainingLevelDescriptions = [
 {level: "iModel:", description: "For youth competitive level below OPDL"},
 {level: "OPDL:", description: "Focusing on developing top players and providing a high-performance training environment"},
 ]
+
+export const summerSeasonHolidays = [
+{name: "Victoria Day:", date:"Monday, May 19, 2025"},
+{name: "Canada Day:", date:"Tuesday, July 1, 2025"},
+{name: "Civic Holiday:", date:"Monday, August 4, 2025"},
+{name: "Labour Day:", date:"Monday, September 1, 2025"},
+{name: "Thanksgiving Day:", date:"Monday, October 13, 2025"},
+]

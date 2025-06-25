@@ -1,4 +1,4 @@
-import { summer2025Schedule, trainingLevelDescriptions } from "../../constants";
+import { summer2025Schedule, trainingLevelDescriptions, summerSeasonHolidays } from "../../constants";
 import "./Schedule.scss";
 
 function Schedule() {
@@ -7,6 +7,7 @@ function Schedule() {
     <main className="schedule">
         <section className="schedule__offerings">
             <h1 className="head-text schedule__header-title">Weekly Schedule</h1>
+            <p className="p-text schedule__subtext">The summer season will take place from the beginning of May until the end of October, weather permitting.</p>
             <h2 className="second-head-text schedule__second-title">Group Training</h2>
             <ul className="schedule__list">
             {trainingLevelDescriptions.map((item, index) => {
@@ -23,24 +24,24 @@ function Schedule() {
                     <table className="schedule__card-table">
                         <tbody>
                         <tr>
-                            <th className="title-text">Day</th>
-                            <td className="p-text">{row.day}</td>
+                            <th className="title-text schedule__table-header">Day</th>
+                            <td className="p-text schedule__table-data">{row.day}</td>
                         </tr>
                         <tr>
-                            <th className="title-text">Age Group</th>
-                            <td className="p-text">{row.ageGroup}</td>
+                            <th className="title-text schedule__table-header">Age Group</th>
+                            <td className="p-text schedule__table-data">{row.ageGroup}</td>
                         </tr>
                         <tr>
-                            <th className="title-text">Level</th>
-                            <td className="p-text">{row.level}</td>
+                            <th className="title-text schedule__table-header">Level</th>
+                            <td className="p-text schedule__table-data">{row.level}</td>
                         </tr>
                         <tr>
-                            <th className="title-text">Time Slot</th>
-                            <td className="p-text">{row.timeSlot}</td>
+                            <th className="title-text schedule__table-header">Time Slot</th>
+                            <td className="p-text schedule__table-data">{row.timeSlot}</td>
                         </tr>
                         <tr>
-                            <th className="title-text">Location</th>
-                            <td className="p-text">{row.location}</td>
+                            <th className="title-text schedule__table-header">Location</th>
+                            <td className="p-text schedule__table-data">{row.location}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -53,25 +54,36 @@ function Schedule() {
                 <table className="schedule__table">
                 <thead>
                     <tr>
-                    <th className="title-text">Day</th>
-                    <th className="title-text">Age Group</th>
-                    <th className="title-text">Level</th>
-                    <th className="title-text">Time Slot</th>
-                    <th className="title-text">Location</th>
+                    <th className="title-text schedule__table-header">Day</th>
+                    <th className="title-text schedule__table-header">Age Group</th>
+                    <th className="title-text schedule__table-header">Level</th>
+                    <th className="title-text schedule__table-header">Time Slot</th>
+                    <th className="title-text schedule__table-header">Location</th>
                     </tr>
                 </thead>
                 <tbody>
                     {summer2025Schedule.map((row, index) => (
                     <tr key={index}>
-                        <td className="p-text">{row.day}</td>
-                        <td className="p-text">{row.ageGroup}</td>
-                        <td className="p-text">{row.level}</td>
-                        <td className="p-text">{row.timeSlot}</td>
-                        <td className="p-text">{row.location}</td>
+                        <td className="p-text schedule__table-data">{row.day}</td>
+                        <td className="p-text schedule__table-data">{row.ageGroup}</td>
+                        <td className="p-text schedule__table-data">{row.level}</td>
+                        <td className="p-text schedule__table-data">{row.timeSlot}</td>
+                        <td className="p-text schedule__table-data">{row.location}</td>
                     </tr>
                     ))}
                 </tbody>
                 </table>
+            </div>
+            <h2 className="second-head-text schedule__third-title">Holidays</h2>
+            <p className="p-text schedule__subtext">There will not be training on any of the following federal holidays during the summer season.</p>
+            <div className="schedule__holidays">
+                <ul className="schedule__list--bottom">
+                {summerSeasonHolidays.map((item, index) => {
+                    return (
+                    <li key={index} className="p-text schedule__list-item"><strong>{item.name}</strong> {" "} {item.date}</li>
+                    )
+                })}
+                </ul>
             </div>
         </section>
     </main>
