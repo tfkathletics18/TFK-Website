@@ -1,8 +1,11 @@
 import { PiSoccerBallFill } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
 import { RiTeamFill, RiRunFill } from "react-icons/ri";
-import { GiSoccerKick, GiGymBag } from "react-icons/gi";
+import { GiSoccerKick } from "react-icons/gi";
 import { TbSoccerField } from "react-icons/tb";
+import { GiSoccerField, GiMuscleUp} from "react-icons/gi";
+import { BsPersonVideo } from "react-icons/bs";
+import { FaNutritionix } from "react-icons/fa6";
 import { VscRemoteExplorer } from "react-icons/vsc";
 import OnevOne from "../assets/videos/1on1.mp4";
 import Group from "../assets/videos/group.mp4";
@@ -29,7 +32,7 @@ export const trainingRequirements = [
     "Please contact us directly if you are a club looking for full team training (15+ players)",
 ]
 
-export const services = [
+export const coreOfferings = [
     {
         title: "1 ON 1 TRAINING",
         bulletPoints: 
@@ -83,12 +86,53 @@ export const services = [
         "Emphasis on footwork",
         ],
     },
+]
+
+export const coreOfferingsIcons = [
+    PiSoccerBallFill,
+    MdGroups,
+    RiTeamFill,
+    RiRunFill,
+    TbSoccerField,
+    GiSoccerKick,
+]
+
+export const coreOfferingsVideos = [OnevOne, Group, Group, Body, Position, Speed];
+
+export const gameChangers = [
     {
-        title: "SPORTS SPECIFIC FITNESS",
+        title: "MATCH VISITS",
+        bulletPoints: 
+            [
+            "Coach observes the player and team performance during a live game",
+            "Players get direct feedback to improve skills and strategies",
+            "Coaches identify patterns in behaviour and decision-making to improve future performance",
+            ],
+    },
+    {
+        title: "STRENGTH TRAINING",
+        bulletPoints: 
+        [
+        "Boosts power, speed, and endurance helps protect joints and ligaments",
+        "Reducing the risk of injury during training or competition",
+        "Stronger muscles recover more efficiently from physical stress"
+        ],
+    },
+    {
+        title: "VIDEO ANALYSIS",
+        bulletPoints: 
+        [
+        "Break down in-game footage to identify technical strengths, movement inefficiencies, and tactical decisions with frame-by-frame accuracy",
+        "Break down game footage to teach positioning, teamwork, and decision-making in a way that’s easy to understand",
+        "Highlight progress over time and celebrate key moments to build confidence and motivation in young players",
+        ],
+    },
+    {
+        title: "MEAL PLAN",
         bulletPoints:
         [
-        "Teaches dietary recommendations to help players receive the best nutrition for their sport",
-        "Specialized training offering individualized training for individuals from sports other than soccer on occasion",
+        "Structured guidance to help you make smarter food choices without the guesswork",
+        "Meal plans tailored for fitness, healthy living or weight management",
         ],
     },
     {
@@ -101,18 +145,13 @@ export const services = [
     },
 ]
 
-export const servicesIcons = [
-    PiSoccerBallFill,
-    MdGroups,
-    RiTeamFill,
-    RiRunFill,
-    TbSoccerField,
-    GiSoccerKick,
-    GiGymBag,
-    VscRemoteExplorer, 
+export const gameChangersIcons = [
+    GiSoccerField,
+    GiMuscleUp,
+    BsPersonVideo,
+    FaNutritionix,
+    VscRemoteExplorer,
 ]
-
-export const serviceTrailerVideos = [OnevOne, Group, Group, Body, Position, Speed, Sport, OnevOne];
 
 export const footerDetails = {
     heading: "TFK Athletic Performance",

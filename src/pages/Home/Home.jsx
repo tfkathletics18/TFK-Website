@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { trainingRequirements, services, servicesIcons, serviceTrailerVideos } from '../../constants';
+import { trainingRequirements, coreOfferings, coreOfferingsIcons, coreOfferingsVideos, gameChangers, gameChangersIcons } from '../../constants';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
+import ServiceCardTrailer from '../../components/ServiceCardTrailer/ServiceCardTrailer';
 import Hero from '../../components/Hero/Hero';
 import VideoModal from '../../components/VideoModal/VideoModal';
 import ORSClogo from "../../assets/images/ORSC_logo.png";
@@ -34,9 +35,16 @@ function Home() {
           </ul>
         </div>
       </section>
-      <section className="home-services">
-        {services.map((service, index) => <ServiceCard key={index} Icon={servicesIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVideoIndex={setDisplayVideoIndex}/>)}
-        <VideoModal openVideoModal={openVideoModal} setOpenVideoModal={setOpenVideoModal} video={serviceTrailerVideos[displayVideoIndex] || serviceTrailerVideos[0]}/>
+      <section className="home-services__container">
+        <h2 className="home-intro__title--less-margin head-text">CORE OFFERINGS</h2>
+        <div className="home-services__offering-list">
+          {coreOfferings.map((service, index) => <ServiceCardTrailer key={index} Icon={coreOfferingsIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVideoIndex={setDisplayVideoIndex}/>)}
+          <VideoModal openVideoModal={openVideoModal} setOpenVideoModal={setOpenVideoModal} video={coreOfferingsVideos[displayVideoIndex] || coreOfferingsVideos[0]}/>
+        </div>
+        <h2 className="home-intro__title--less-margin head-text">GAME CHANGERS</h2>
+        <div className="home-services__offering-list">
+          {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}
+        </div>
       </section>
       <section className="home-sucess-stories">
         <div className="home-sucess-stories__container">
