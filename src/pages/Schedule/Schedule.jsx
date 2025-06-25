@@ -5,7 +5,7 @@ function Schedule() {
 
   return (
     <main className="schedule">
-        <section className="schedule__page">
+        <section className="schedule__offerings">
             <h1 className="head-text schedule__header-title">Weekly Schedule</h1>
             <h2 className="second-head-text schedule__second-title">Group Training</h2>
             <ul className="schedule__list">
@@ -53,21 +53,21 @@ function Schedule() {
                 <table className="schedule__table">
                 <thead>
                     <tr>
-                    <th>Day</th>
-                    <th>Age Group</th>
-                    <th>Level</th>
-                    <th>Time Slot</th>
-                    <th>Location</th>
+                    <th className="title-text">Day</th>
+                    <th className="title-text">Age Group</th>
+                    <th className="title-text">Level</th>
+                    <th className="title-text">Time Slot</th>
+                    <th className="title-text">Location</th>
                     </tr>
                 </thead>
                 <tbody>
                     {summer2025Schedule.map((row, index) => (
                     <tr key={index}>
-                        <td>{row.day}</td>
-                        <td>{row.ageGroup}</td>
-                        <td>{row.level}</td>
-                        <td>{row.timeSlot}</td>
-                        <td>{row.location}</td>
+                        <td className="p-text">{row.day}</td>
+                        <td className="p-text">{row.ageGroup}</td>
+                        <td className="p-text">{row.level}</td>
+                        <td className="p-text">{row.timeSlot}</td>
+                        <td className="p-text">{row.location}</td>
                     </tr>
                     ))}
                 </tbody>
