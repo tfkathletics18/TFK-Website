@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { trainingRequirements, coreOfferings, coreOfferingsIcons, coreOfferingsVideos, gameChangers, gameChangersIcons } from '../../constants';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import ServiceCardTrailer from '../../components/ServiceCardTrailer/ServiceCardTrailer';
 import Hero from '../../components/Hero/Hero';
+import Button from '../../components/Button/Button';
 import VideoModal from '../../components/VideoModal/VideoModal';
 import ORSClogo from "../../assets/images/ORSC_logo.png";
 import TSFClogo from "../../assets/images/TSFC_logo.png";
@@ -12,6 +14,12 @@ import "./Home.scss";
 function Home() {
   const [ openVideoModal, setOpenVideoModal ] = useState(false);
   const [ displayVideoIndex , setDisplayVideoIndex ] = useState(0);
+
+  const navigate = useNavigate();
+
+  const handleBookNow = () => {
+      navigate("/contact");
+  }
 
   return (
     <main className="home">
@@ -45,6 +53,7 @@ function Home() {
         <div className="home-services__offering-list">
           {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}
         </div>
+        <Button label="Book Now" onClickFunction={handleBookNow}></Button>
       </section>
       <section className="home-sucess-stories">
         <div className="home-sucess-stories__container">
