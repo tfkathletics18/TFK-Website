@@ -119,15 +119,6 @@ export const gameChangers = [
         ],
     },
     {
-        title: "VIDEO ANALYSIS",
-        bulletPoints: 
-        [
-        "Break down in-game footage to identify technical strengths, movement inefficiencies, and tactical decisions with frame-by-frame accuracy",
-        "Break down game footage to teach positioning, teamwork, and decision-making in a way that’s easy to understand",
-        "Highlight progress over time and celebrate key moments to build confidence and motivation in young players",
-        ],
-    },
-    {
         title: "MEAL PLAN",
         bulletPoints:
         [
@@ -143,14 +134,23 @@ export const gameChangers = [
         "Training programs perfectly suited for both athletes and non-athletes",
         ],
     },
+    {
+        title: "VIDEO ANALYSIS",
+        bulletPoints: 
+        [
+        "Break down in-game footage to identify technical strengths, movement inefficiencies, and tactical decisions with frame-by-frame accuracy",
+        "Break down game footage to teach positioning, teamwork, and decision-making in a way that’s easy to understand",
+        "Highlight progress over time and celebrate key moments to build confidence and motivation in young players",
+        ],
+    },
 ]
 
 export const gameChangersIcons = [
     GiSoccerField,
     GiMuscleUp,
-    BsPersonVideo,
     FaNutritionix,
     VscRemoteExplorer,
+    BsPersonVideo,
 ]
 
 export const footerDetails = {
