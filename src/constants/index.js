@@ -29,7 +29,7 @@ export const trainingRequirements = [
     "Minimum Number of Players for Small Group Training: 3",
     "Maximum Number of Players for Small Group Training: 10",
     "Targeted Areas: Agility, Technique, Power, Strength",
-    "Please contact us directly if you are a club looking for full team training (15+ players)",
+    "Please contact us directly if you are a club looking for full team training",
 ]
 
 export const coreOfferings = [

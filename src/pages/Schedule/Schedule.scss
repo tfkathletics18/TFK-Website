@@ -32,6 +32,10 @@
         }
     }
 
+    &__span-link {
+        cursor: pointer;
+    }
+
     &__list {
         list-style-type: none;
         margin-bottom: 1.5rem;
