@@ -23,6 +23,11 @@ const NavBar = () => {
                     </NavLink>
                 </li>
                 <li className="navigation__item">
+                    <NavLink to="/pricing" className="navigation__link">
+                        <p className={`navigation__text ${location.pathname === "/pricing" ? "navigation__text--current" : ""}`}>Pricing</p>
+                    </NavLink>
+                </li>
+                <li className="navigation__item">
                     <NavLink to="/gallery" className="navigation__link">
                         <p className={`navigation__text ${location.pathname === "/gallery" ? "navigation__text--current" : ""}`}>Gallery</p>
                     </NavLink>

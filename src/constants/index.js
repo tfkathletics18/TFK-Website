@@ -330,3 +330,25 @@ export const summerSeasonHolidays = [
 {name: "Labour Day:", date:"Monday, September 1, 2025"},
 {name: "Thanksgiving Day:", date:"Monday, October 13, 2025"},
 ]
+
+export const groupTrainingPricingOptions = [
+    { title: 'Saturday | 8-12 Years | Grassroots', time: '10:00 AM - 11:00 AM', price: '$382.50', url: 'https://buy.stripe.com/00wbJ1dC6bhmeYm7lD3sI0d' },
+    { title: 'Saturday | 13-17 Years | Intermediate/Rep', time: '11:30 AM - 12:30 PM', price: '$382.50', url: 'https://buy.stripe.com/14A6oHdC6adi6rQaxP3sI0e' },
+    { title: 'Sunday | 8-12 Years | Grassroots', time: '10:00 AM - 11:00 AM', price: '$382.50', url: 'https://buy.stripe.com/3cI14n8hM5X2cQe7lD3sI06' },
+    { title: 'Sunday | 13-17 Years | Intermediate/Rep', time: '11:30 AM - 12:30 PM', price: '$382.50', url: 'https://buy.stripe.com/bJe6oHapU5X2aI649r3sI03' },
+    { title: 'Sunday | 13-17 Years | iModel & OPDL', time: '1:00 PM - 2:30 PM', price: '$382.50', url: 'https://buy.stripe.com/14A9ATgOibhm17weO53sI02' },
+];
+
+export const oneOnOnePricingOptions = [
+    { title: 'Saturday Afternoon | u8-10 Years | 1 Hour Session', time: '10:00 AM - 11:00 AM', price: '$65', url: 'https://buy.stripe.com/3cIeVd1TogBG17waxP3sI0f' },
+    { title: 'Saturday Afternoon | 11-13 Years | 1 Hour Session', time: '11:30 AM - 12:30 PM', price: '$75', url: 'https://buy.stripe.com/bJe28rapU7162bA0Xf3sI08' },
+    { title: 'Saturday Afternoon | 14-17 Years | 1.5 Hour Session', time: '10:00 AM - 11:00 AM', price: '$85', url: 'https://buy.stripe.com/bJe6oHfKe1GMcQe49r3sI09' }
+];
+
+export const gameChangersPricingOptions = [
+    { title: 'Match Visits | Within York Region', price: '$50', url: 'https://buy.stripe.com/eVqdR92Xsadi7vU49r3sI0b' },
+    { title: 'Strength Training | 1 Hour Session | Markham', price: '$85', url: 'https://buy.stripe.com/4gM14nfKe0CI03sbBT3sI0h' },
+    { title: 'Personalized Meal Plan', price: '$120', url: 'https://buy.stripe.com/7sY4gz2Xs716aI6dK13sI0a' },
+    { title: 'Online Training | 1 Hour Session', price: '$35', url: 'https://buy.stripe.com/5kQbJ1btYdpudUibBT3sI0g' },
+    { title: 'Video Analysis | 1 Hour Session', price: '$65', url: 'https://book.stripe.com/4gM9ATgOiclqbMa8pH3sI0i' },
+];

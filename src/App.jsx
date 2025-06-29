@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Schedule from './pages/Schedule/Schedule'
+import Pricing from './pages/Pricing/Pricing'
 import Gallery from './pages/Gallery/Gallery'
 import Contact from './pages/Contact/Contact'
 import Header from './components/Header/Header'
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/schedule' element={<Schedule />} />
+          <Route path='/pricing' element={<Pricing />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

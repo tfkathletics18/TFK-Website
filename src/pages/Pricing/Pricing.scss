@@ -1,0 +1,169 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.pricing-page {
+    padding: 0 1rem;
+    
+    @include tablet {
+        padding: 0 2rem;
+    }
+
+    @include desktop {
+        padding: 0 5rem;
+    }
+
+    &__heading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header-title {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+
+        @include tablet {
+            margin-top: 2.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__subtext {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include tablet {
+            width: 75%;
+            margin-bottom: 1.5rem;
+        }
+
+        @include desktop {
+            width: 50%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__second-title {
+        margin-bottom: 0.5rem;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__form-button {
+        background-color: $primary-red;
+        @include textStyle($plain-white, 1rem, 20px, 600);
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1.5rem;
+        transition: background-color 0.3s;
+        width: 50%;
+
+        &.on {
+            background-color: #28a745;
+            cursor: default;
+        }
+
+        &:hover:not(.on) {
+            background-color: $secondary-red;
+        }
+
+        @include tablet {
+            width: 25%;
+        }
+
+        @include desktop {
+            width: 15%;
+        }
+    }
+
+    &__section {
+        margin-bottom: 2rem;
+    }
+
+    &__heading {
+        padding-bottom: 0.3rem;
+
+        &--special {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.3rem;
+        }
+    }
+
+    &__sub-heading {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 0.3rem;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);   
+        }
+
+        @include tablet{
+            flex: 1 1 calc(50% - 1rem);
+        }
+
+        @include desktop {
+            flex: 1 1 calc(33.33% - 1rem);
+        }
+
+        &-title {
+            margin-bottom: 0.5rem;
+        }
+
+        &-time {
+            margin-bottom: 0.5rem;
+        }
+
+        &-price {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &__book-button {
+        background-color: $primary-red;
+        @include textStyle($plain-white, 1rem, 20px,400);
+        padding: 0.4rem 0.8rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover:enabled {
+            background-color: $secondary-red;
+        }
+
+        &:disabled {
+            background-color: #ccc;
+            color: #777;
+            cursor: not-allowed;
+        }
+    }
+}

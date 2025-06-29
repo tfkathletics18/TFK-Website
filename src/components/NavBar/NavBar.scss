@@ -6,11 +6,11 @@
 
     @include tablet {
         display: flex;
-        width: 45%;
+        width: 60%;
     }
 
     @include desktop {
-        width: 30%;
+        width: 40%;
     }
 
     &__list {
@@ -19,6 +19,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__item {
+        @include tablet {
+            margin-right: 0.75rem;
+        }
     }
 
     &__link {

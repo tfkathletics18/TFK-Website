@@ -44,6 +44,16 @@ function HamburgerMenu() {
                         </NavLink>
                     </li>
                     <li className="menu__item">
+                        <NavLink to="/schedule" className="menu__link">
+                            <p className={`menu__text ${location.pathname === "/schedule" ? "menu__text--current" : ""}`}>Schedule</p>
+                        </NavLink>
+                    </li>
+                    <li className="menu__item">
+                        <NavLink to="/pricing" className="menu__link">
+                            <p className={`menu__text ${location.pathname === "/pricing" ? "menu__text--current" : ""}`}>Pricing</p>
+                        </NavLink>
+                    </li>
+                    <li className="menu__item">
                         <NavLink to="/gallery" className="menu__link">
                             <p className={`menu__text ${location.pathname === "/gallery" ? "menu__text--current" : ""}`}>Gallery</p>
                         </NavLink>
