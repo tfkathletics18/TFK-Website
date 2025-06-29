@@ -18,7 +18,7 @@ function Home() {
   const navigate = useNavigate();
 
   const handleBookNow = () => {
-      navigate("/contact");
+      navigate("/pricing");
   }
 
   return (
