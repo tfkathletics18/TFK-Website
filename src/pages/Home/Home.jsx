@@ -19,6 +19,7 @@ function Home() {
 
   const handleBookNow = () => {
       navigate("/pricing");
+      window.scrollTo(0, 0);
   }
 
   return (

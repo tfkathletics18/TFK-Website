@@ -31,10 +31,12 @@ function Hero() {
 
   const handleClickCoach = () => {
       navigate("/about");
+      window.scrollTo(0, 0);
   }
 
   const handleClickGetStarted = () => {
     navigate("/contact");
+    window.scrollTo(0, 0);
   }
 
   if (screenWidth < 768) {
