@@ -80,16 +80,18 @@ function Schedule() {
                 </tbody>
                 </table>
             </div>
-            <h2 className="second-head-text schedule__third-title">Holidays</h2>
-            <p className="p-text schedule__subtext">There will not be training on any of the following federal holidays during the summer season.</p>
-            <div className="schedule__holidays">
-                <ul className="schedule__list--bottom">
-                {summerSeasonHolidays.map((item, index) => {
-                    return (
-                    <li key={index} className="p-text schedule__list-item"><strong>{item.name}</strong> {" "} {item.date}</li>
-                    )
-                })}
-                </ul>
+            <div className="schedule__holidays-container">
+                <h2 className="second-head-text schedule__third-title">Holidays</h2>
+                <p className="p-text schedule__subtext">There will not be training on any of the following federal holidays during the summer season.</p>
+                <div className="schedule__holidays">
+                    <ul className="schedule__list--bottom">
+                    {summerSeasonHolidays.map((item, index) => {
+                        return (
+                        <li key={index} className="p-text schedule__list-item schedule__list-item--bottom"><strong>{item}</strong></li>
+                        )
+                    })}
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

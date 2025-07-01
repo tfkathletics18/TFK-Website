@@ -323,13 +323,7 @@ export const trainingLevelDescriptions = [
 {level: "OPDL:", description: "Focusing on developing top players and providing a high-performance training environment"},
 ]
 
-export const summerSeasonHolidays = [
-{name: "Victoria Day:", date:"Monday, May 19, 2025"},
-{name: "Canada Day:", date:"Tuesday, July 1, 2025"},
-{name: "Civic Holiday:", date:"Monday, August 4, 2025"},
-{name: "Labour Day:", date:"Monday, September 1, 2025"},
-{name: "Thanksgiving Day:", date:"Monday, October 13, 2025"},
-]
+export const summerSeasonHolidays = ["Victoria Day |", "Canada Day |" , "Civic Holiday |", "Labour Day |", "Thanksgiving Day"]
 
 export const groupTrainingPricingOptions = [
     { title: 'Saturday | 8-12 Years | Grassroots', time: '10:00 AM - 11:00 AM', price: '$382.50', url: 'https://buy.stripe.com/00wbJ1dC6bhmeYm7lD3sI0d' },
