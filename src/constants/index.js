@@ -7,12 +7,12 @@ import { GiSoccerField, GiMuscleUp} from "react-icons/gi";
 import { BsPersonVideo } from "react-icons/bs";
 import { FaNutritionix } from "react-icons/fa6";
 import { VscRemoteExplorer } from "react-icons/vsc";
-import OnevOne from "../assets/videos/1on1.mp4";
-import Group from "../assets/videos/group.mp4";
-import Body from "../assets/videos/body.mp4";
-import Position from "../assets/videos/position.mp4";
-import Speed from "../assets/videos/speed.mp4";
-import Sport from "../assets/videos/sport.mp4";
+import OnevOne from "../assets/videos/1On1-V2.mp4";
+import Group from "../assets/videos/Group-V2.mp4";
+import Team from "../assets/videos/Team-V2.mp4"
+import Movement from "../assets/videos/Movement-V2.mp4";
+import Position from "../assets/videos/Position-V2.mp4";
+import Speed from "../assets/videos/Speed-V2.mp4";
 
 
 export const heroPlayers = [
@@ -97,7 +97,7 @@ export const coreOfferingsIcons = [
     GiSoccerKick,
 ]
 
-export const coreOfferingsVideos = [OnevOne, Group, Group, Body, Position, Speed];
+export const coreOfferingsVideos = [OnevOne, Group, Team, Movement, Position, Speed];
 
 export const gameChangers = [
     {
