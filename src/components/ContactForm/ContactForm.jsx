@@ -12,7 +12,6 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { IoMdReturnLeft } from 'react-icons/io';
 
 const defaultTheme = createTheme({
     typography: {
@@ -39,7 +38,7 @@ const focusColour = {
   }
 }
 
-const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY; // Access key to send form submissions to gmail accoun
+const formSubmissionKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY; // Access key to send form submissions to gmail account
 
 function ContactForm() {
   const [firstName, setFirstName] = useState("");

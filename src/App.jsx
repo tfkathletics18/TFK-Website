@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import ReactPixel from 'react-facebook-pixel';
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Schedule from './pages/Schedule/Schedule'
@@ -9,13 +11,15 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import ScrollArrow from './components/ScrollArrow/ScrollArrow'
 import './App.scss'
+import { useEffect } from 'react'
 
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    if (window.fbq) {
-      window.fbq('track', 'PageView');
-    }
+    // Track page view on route change
+    ReactPixel.pageView();
   }, [location.pathname]);
 
   return (
