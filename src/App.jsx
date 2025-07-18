@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import {Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import ReactPixel from 'react-facebook-pixel';
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
@@ -22,22 +22,20 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/schedule' element={<Schedule />} />
-          <Route path='/pricing' element={<Pricing />} />
-          <Route path='/gallery' element={<Gallery />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        <ScrollArrow />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="app">
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/schedule' element={<Schedule />} />
+        <Route path='/pricing' element={<Pricing />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      <ScrollArrow />
+      <Footer />
+    </div>
   )
 }
 

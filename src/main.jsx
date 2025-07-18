@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx'
 import ReactPixel from 'react-facebook-pixel'
 import './main.scss'
@@ -14,6 +15,8 @@ ReactPixel.init('1781517582747172', {}, options);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )
