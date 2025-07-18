@@ -12,7 +12,11 @@ import './App.scss'
 
 
 function App() {
-
+  useEffect(() => {
+    if (window.fbq) {
+      window.fbq('track', 'PageView');
+    }
+  }, [location.pathname]);
 
   return (
     <BrowserRouter>
