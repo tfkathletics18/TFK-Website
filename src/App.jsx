@@ -11,7 +11,6 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import ScrollArrow from './components/ScrollArrow/ScrollArrow'
 import './App.scss'
-import { useEffect } from 'react'
 
 
 function App() {
