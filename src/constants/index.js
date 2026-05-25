@@ -139,7 +139,7 @@ export const gameChangers = [
         bulletPoints: 
         [
         "Break down in-game footage to identify technical strengths, movement inefficiencies, and tactical decisions with frame-by-frame accuracy",
-        "Break down game footage to teach positioning, teamwork, and decision-making in a way that’s easy to understand",
+        "Break down game footage to teach positioning, teamwork, and decision-making in a way that's easy to understand",
         "Highlight progress over time and celebrate key moments to build confidence and motivation in young players",
         ],
     },
@@ -155,7 +155,7 @@ export const gameChangersIcons = [
 
 export const footerDetails = {
     heading: "TFK Athletic Performance",
-    description: "Whether you want to bring your game to the next level or just want to spend some time playing a fun sport, this is the right place for you.  Book a session or get answers to any questions you might have.",
+    description: "Whether you want to bring your game to the next level or just want to spend some time playing a fun sport, this is the right place for you.  Book a session or get answers to any[...]
     phone: "+1 (647) 523-3702",
     email: "totalfitnesskinetics@gmail.com",
     instagram: "https://www.instagram.com/tfkathleticperformance",
@@ -166,12 +166,12 @@ export const footerDetails = {
 }
 
 export const aboutTheCoach = {
-    paragraph1: "In 2007 Kusema migrated to Canada from the USA. Between 2008-16, he was a part of 3 different clubs. The first, Toronto Croatia Football Club. He also played with Brampton City United for 2 seasons, where his team became CSL Reserve Champions. There were then four seasons spent with Lakeshore United, which saw them winning the Ukrainian Tournament as well as become Champions of the in-season tournament.",
-    paragraph2: "Since leaving Lakeshore United in 2016, Kusema has dedicated his time to teaching other younger players to go from good to great without losing a love of the sport. This is what led to him establishing Total Fitness Kinetics: Athletic Performance.",
-    paragraph3: "With the goal of offering high-quality training programs for youth soccer players at an affordable price, TFK Athletic Performance is responsible for training dozens of future stars. And behind all of it is Kusema as he strives to teach and inspire players under 8-17.",
+    paragraph1: "In 2007 Kusema migrated to Canada from the USA. Between 2008-16, he was a part of 3 different clubs. The first, Toronto Croatia Football Club. He also played with Brampton City U[...]
+    paragraph2: "Since leaving Lakeshore United in 2016, Kusema has dedicated his time to teaching other younger players to go from good to great without losing a love of the sport. This is what [...]
+    paragraph3: "With the goal of offering high-quality training programs for youth soccer players at an affordable price, TFK Athletic Performance is responsible for training dozens of future st[...]
     paragraph4: "Tinashe Kusema, has been involved in the world of soccer for as long as he can remember. Although he is now a certified personal trainer, he has been a player for far longer.",
-    paragraph5: "Starting back at Marietta High School in Marietta, Georgia, USA, he was molded into a star Forward/Midfielder and became the official MVP of a team that went undefeated at home in 5AAAAA Region.",
-    paragraph6: "During his high school and collegiate career, Kusema played for a variety of clubs, including Marietta F.C. receiving the titles of Best Offensive Player, Team Co-Captain, Leading Goal Scorer, and Saturn Futbol Club, which they became League Champions and US National Open Cup Indoor Champions, it became clear that Kusema had a bright future in the world of soccer.",
+    paragraph5: "Starting back at Marietta High School in Marietta, Georgia, USA, he was molded into a star Forward/Midfielder and became the official MVP of a team that went undefeated at home i[...]
+    paragraph6: "During his high school and collegiate career, Kusema played for a variety of clubs, including Marietta F.C. receiving the titles of Best Offensive Player, Team Co-Captain, Leadin[...]
 }
 
 export const aboutPlayingCareer = [
@@ -308,11 +308,6 @@ export const aboutCertifications = [
 ]
 
 export const summer2025Schedule = [
-    { day: "Saturday", ageGroup: "8-12", level: "Grassroots", timeSlot: "10:00 AM - 11:00 AM", location: "Mitchell Pond, Richmond Hill" },
-    { day: "Saturday", ageGroup: "13-17", level: "Intermediate/Rep", timeSlot: "11:30 AM - 12:30 PM", location: "Mitchell Pond, Richmond Hill" },
-    { day: "Sunday", ageGroup: "8-12", level: "Grassroots", timeSlot: "10:00 AM - 11:00 AM", location: "Bayview Hill Park, Richmond Hill" },
-    { day: "Sunday", ageGroup: "13-17", level: "Intermediate/Rep", timeSlot: "11:30 AM - 12:30 PM", location: "Bayview Hill Park, Richmond Hill" },
-    { day: "Sunday", ageGroup: "13-17", level: "iModel & OPDL", timeSlot: "1:00 PM - 2:30 PM", location: "Bayview Hill Park, Richmond Hill" },
 ]
 
 export const trainingLevelDescriptions = [
