@@ -12,8 +12,8 @@ function Schedule() {
             <h1 className="head-text schedule__header-title">Weekly Schedule</h1>
             <p className="p-text schedule__subtext">The summer season will take place from the beginning of May until the end of October, weather permitting.</p>
             <h2 className="second-head-text schedule__second-title">Field Locations</h2>
-            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 1 <span className="p-text p-text--500 schedule__span-link" onClick={(1) => handleLink()}>()</span></p>
-            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 2 <span className="p-text p-text--500 schedule__span-link" onClick={(2) => handleLink()}>()</span></p>
+            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 1 <span className="p-text p-text--500 schedule__span-link" onClick={() => handleLink()}>()</span></p>
+            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 2 <span className="p-text p-text--500 schedule__span-link" onClick={() => handleLink()}>()</span></p>
             <h2 className="second-head-text schedule__second-title">Group Training</h2>
             <ul className="schedule__list">
             {trainingLevelDescriptions.map((item, index) => {
