@@ -12,8 +12,8 @@ function Schedule() {
             <h1 className="head-text schedule__header-title">Weekly Schedule</h1>
             <p className="p-text schedule__subtext">The summer season will take place from the beginning of May until the end of October, weather permitting.</p>
             <h2 className="second-head-text schedule__second-title">Field Locations</h2>
-            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 1 <span className="p-text p-text--500 schedule__span-link" onClick={('https://maps.app.goo.gl/mcY2JyswxxcLUaHY8') => handleLink()}>(View on Google Maps)</span></p>
-            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 2 <span className="p-text p-text--500 schedule__span-link" onClick={('https://maps.app.goo.gl/5Wjpkkgs5zrLuY2R7') => handleLink()}>(View on Google Maps)</span></p>
+            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 1 <span className="p-text p-text--500 schedule__span-link" onClick={() => handleLink('https://maps.app.goo.gl/mcY2JyswxxcLUaHY8')}>(View on Google Maps)</span></p>
+            <p className="p-text schedule__subtext"><strong>-</strong> Richmond Hill, ON Field 2 <span className="p-text p-text--500 schedule__span-link" onClick={() => handleLink('https://maps.app.goo.gl/5Wjpkkgs5zrLuY2R7')}>(View on Google Maps)</span></p>
             <h2 className="second-head-text schedule__second-title">Group Training</h2>
             <ul className="schedule__list">
             {trainingLevelDescriptions.map((item, index) => {
@@ -25,7 +25,7 @@ function Schedule() {
 
             {/* Mobile Cards */}
             <div className="schedule__card-view">
-                {summer2026Schedule.map((row, index) => (
+                {summer2025Schedule.map((row, index) => (
                     <div key={index} className="schedule__card">
                     <table className="schedule__card-table">
                         <tbody>
