@@ -6,6 +6,9 @@ function ServiceCardTrailer({Icon, service, setOpenVideoModal, index, setDisplay
     setDisplayVideoIndex(index);
   }
 
+  // Hide button for Team Training
+  const showButton = service.title !== "TEAM TRAINING";
+
   return (
     <div className="card">
         <div className="card__content">
@@ -14,7 +17,7 @@ function ServiceCardTrailer({Icon, service, setOpenVideoModal, index, setDisplay
             <ul className="card__list">
                 {service.bulletPoints.map((point, index) => <li key={index} className="card__list-item p-text p-text--500"><span className="card__list-item-bar">{point}</span></li>)}
             </ul>
-            <button className="card__button" onClick={handleClick}>Watch Trailer</button>
+            {showButton && <button className="card__button" onClick={handleClick}>Watch Trailer</button>}
         </div>
     </div>
   )
