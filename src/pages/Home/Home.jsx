@@ -8,7 +8,7 @@ import Button from '../../components/Button/Button';
 import VideoModal from '../../components/VideoModal/VideoModal';
 import ORSClogo from "../../assets/images/ORSC_logo.png";
 import TSFClogo from "../../assets/images/TSFC_logo.png";
-import ScarboroughLogo from "../../assets/images/Scarborough_logo.png";
+// Scarborough logo import removed to avoid build failure when image is missing
 import "./Home.scss";
 
 
@@ -64,7 +64,8 @@ function Home() {
           <div className="home-sucess-stories__logo-container">
             <img src={ORSClogo} alt="Oak Ridges Soccer Club Logo" className="home-sucess-stories__logo"/>
             <img src={TSFClogo} alt="Toronto Skillz Soccer Academy Logo" className="home-sucess-stories__logo"/>
-            <img src={ScarboroughLogo} alt="Scarborough Town F.C. Logo" className="home-sucess-stories__logo"/>
+            {/* Use a public/static path so the app won't fail to build while the file is missing */}
+            <img src="/assets/images/Scarborough_logo.png" alt="Scarborough Town F.C. Logo" className="home-sucess-stories__logo"/>
           </div>
         </div>
       </section>
