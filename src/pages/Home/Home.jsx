@@ -53,7 +53,7 @@ function Home() {
         </div>
         <h2 className="home-intro__title--less-margin head-text">GAME CHANGERS</h2>
         <div className="home-services__offering-list">
-          {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}}
+          {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}
         </div>
         <Button label="Book Now" onClickFunction={handleBookNow}></Button>
       </section>
@@ -64,8 +64,6 @@ function Home() {
           <div className="home-sucess-stories__logo-container">
             <img src={ORSClogo} alt="Oak Ridges Soccer Club Logo" className="home-sucess-stories__logo"/>
             <img src={TSFClogo} alt="Toronto Skillz Soccer Academy Logo" className="home-sucess-stories__logo"/>
-            {/* Use a public/static path so the app won't fail to build while the file is missing */}
-            <img src="/assets/images/Scarborough_logo.png" alt="Scarborough Town F.C. Logo" className="home-sucess-stories__logo"/>
           </div>
         </div>
       </section>
