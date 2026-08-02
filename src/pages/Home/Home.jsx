@@ -8,6 +8,7 @@ import Button from '../../components/Button/Button';
 import VideoModal from '../../components/VideoModal/VideoModal';
 import ORSClogo from "../../assets/images/ORSC_logo.png";
 import TSFClogo from "../../assets/images/TSFC_logo.png";
+import ScarboroughLogo from "../../assets/images/Scarborough_logo.png";
 import "./Home.scss";
 
 
@@ -28,11 +29,11 @@ function Home() {
       <section className="home-intro">
         <div className="home-intro__container">
           <h2 className="home-intro__title head-text">OUR MISSION</h2>
-          <p className="home-intro__subtitle p-text p-text--300">Provide individual personal coaching to young passionate athletes with the love of soccer. Our intimate training session will allow us to effectively identify areas of improvement for our trainee's, so they can gain a competitive edge in the modern game.</p>
+          <p className="home-intro__subtitle p-text p-text--300">Provide individual personal coaching to young passionate athletes with the love of soccer. Our intimate training session will allow[...]
         </div>
         <div className="home-intro__container home-intro__container--extra-bottom-margin">
           <h2 className="home-intro__title head-text">THE TFK VALUE</h2>
-          <p className="home-intro__subtitle p-text p-text--300">We tailor our training sessions to the level of the athlete. Whether they are just beginning their soccer journey or are an elite player looking to take their skills to the next level, we will help them achieve their goals. Working with a personal coach to develop this specialized training program will improve many areas of their game inlcuding shooting, dribbling, passing & recieving, ball mastery, and positioning.</p>
+          <p className="home-intro__subtitle p-text p-text--300">We tailor our training sessions to the level of the athlete. Whether they are just beginning their soccer journey or are an elite p[...]
         </div>
         <div className="home-intro__google-review-widget-container">
           <div className="elfsight-app-756aff63-bfca-4ee9-81fe-6024a0a51083"></div>
@@ -47,12 +48,12 @@ function Home() {
       <section className="home-services__container">
         <h2 className="home-intro__title--less-margin head-text">CORE OFFERINGS</h2>
         <div className="home-services__offering-list">
-          {coreOfferings.map((service, index) => <ServiceCardTrailer key={index} Icon={coreOfferingsIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVideoIndex={setDisplayVideoIndex}/>)}
+          {coreOfferings.map((service, index) => <ServiceCardTrailer key={index} Icon={coreOfferingsIcons[index]} service={service} setOpenVideoModal={setOpenVideoModal} index={index} setDisplayVi[...]}
           <VideoModal openVideoModal={openVideoModal} setOpenVideoModal={setOpenVideoModal} video={coreOfferingsVideos[displayVideoIndex] || coreOfferingsVideos[0]}/>
         </div>
         <h2 className="home-intro__title--less-margin head-text">GAME CHANGERS</h2>
         <div className="home-services__offering-list">
-          {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}
+          {gameChangers.map((service, index) => <ServiceCard key={index} Icon={gameChangersIcons[index]} service={service}/>)}}
         </div>
         <Button label="Book Now" onClickFunction={handleBookNow}></Button>
       </section>
@@ -63,6 +64,7 @@ function Home() {
           <div className="home-sucess-stories__logo-container">
             <img src={ORSClogo} alt="Oak Ridges Soccer Club Logo" className="home-sucess-stories__logo"/>
             <img src={TSFClogo} alt="Toronto Skillz Soccer Academy Logo" className="home-sucess-stories__logo"/>
+            <img src={ScarboroughLogo} alt="Scarborough Town F.C. Logo" className="home-sucess-stories__logo"/>
           </div>
         </div>
       </section>
